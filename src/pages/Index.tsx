@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -135,9 +134,8 @@ const Index = () => {
           <div className="absolute inset-0 bg-neon/5 blur-3xl rounded-full mx-auto w-1/2 h-1/2 my-auto opacity-20"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Visual Communication?</h2>
               <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                Let's collaborate to bring clarity to your complex ideas
+                Let's connect for a free consultation and explore how motion design can elevate your marketing :)
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -161,4 +159,3 @@ const Index = () => {
 };
 
 export default Index;
-
