@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -33,13 +32,9 @@ const Index = () => {
       </nav>
 
       <main>
-        {/* Video Section - Light background */}
-        <section className="py-20 bg-white/5">
-          <div className="container mx-auto px-6">
-            <div className="w-full max-w-4xl mx-auto">
-              <VideoEmbed youtubeId={youtubeVideoId} />
-            </div>
-          </div>
+        {/* Video Section - Light background - Full Width */}
+        <section className="py-20 bg-white/5 w-full">
+          <VideoEmbed youtubeId={youtubeVideoId} />
         </section>
 
         {/* Who Am I Section - Dark with border */}
