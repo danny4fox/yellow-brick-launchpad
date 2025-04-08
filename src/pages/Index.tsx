@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -17,18 +16,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
       {/* Hero Section with Video Background */}
-      <header className="relative h-screen overflow-hidden">
+      <header className="relative overflow-hidden">
         {/* Video Background */}
-        <div className="absolute inset-0 container mx-auto px-6">
-          <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} isHero={true} />
-          {/* Dark overlay to improve text readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-6">
+          <VideoEmbed youtubeId={youtubeVideoId} isHero={true} />
         </div>
         
         {/* Navigation Floating on Top */}
-        <div className="relative z-20 container mx-auto px-6">
+        <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
           <nav className="py-6">
-            <div className="flex items-center justify-between bg-white/40 backdrop-blur-sm px-6 py-3 rounded-lg">
+            <div className="flex items-center justify-between px-6 py-3 rounded-lg">
               <a href="/" className="text-2xl font-bold">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
