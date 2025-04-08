@@ -13,7 +13,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({ children, href, className }
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block font-medium px-8 py-3 bg-neon text-darknavy rounded-full hover:brightness-110 transition-all ${className}`}
+      className={`inline-block font-medium px-8 py-3 bg-neon text-darknavy rounded-full hover:brightness-110 transition-all shadow-lg ${className}`}
     >
       {children}
     </a>

@@ -30,12 +30,9 @@ const Index = () => {
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
-              <div className="hidden md:flex items-center gap-8">
-                <a href="#services" className="hover:text-neon transition-colors">Services</a>
-                <a href="#about" className="hover:text-neon transition-colors">About</a>
-                <a href="#contact" className="hover:text-neon transition-colors">Contact</a>
-                <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
-                  Join Waitlist
+              <div className="hidden md:flex items-center">
+                <ActionButton href={calendarUrl}>
+                  Free Consultation
                 </ActionButton>
               </div>
             </div>
@@ -132,12 +129,17 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Dark with glow */}
-        <section id="contact" className="py-20 bg-darknavy/90 relative">
-          <div className="absolute inset-0 bg-neon/5 blur-3xl rounded-full mx-auto w-1/2 h-1/2 my-auto opacity-20"></div>
+        {/* CTA Section - With new contrasting background */}
+        <section id="contact" className="py-20 relative overflow-hidden">
+          {/* Gradient background with more contrast */}
+          <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-darknavy"></div>
+          
+          {/* Light effect for better contrast */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
+          
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-8">
-              <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              <p className="text-lg text-white max-w-2xl mx-auto">
                 Let's connect for a free consultation and explore how motion design can elevate your marketing :)
               </p>
             </div>
@@ -145,7 +147,7 @@ const Index = () => {
               <ActionButton href={linkedInUrl}>
                 Connect on LinkedIn
               </ActionButton>
-              <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
+              <ActionButton href={calendarUrl} className="bg-neon hover:bg-neon/80 text-darknavy font-bold">
                 Schedule a Meeting
               </ActionButton>
             </div>
