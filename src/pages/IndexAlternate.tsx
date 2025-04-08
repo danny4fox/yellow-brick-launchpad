@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -63,7 +64,7 @@ const IndexAlternate = () => {
                 <div className="relative">
                   <div className="absolute -inset-2 bg-gradient-to-r from-neon/30 to-neon/10 blur-lg rounded-2xl"></div>
                   <img 
-                    src="/placeholder.svg" 
+                    src="/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
                     alt="Daniel Bodnar" 
                     className="relative rounded-2xl w-full max-w-xs mx-auto shadow-xl border-2 border-gray-100"
                   />

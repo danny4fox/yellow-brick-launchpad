@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -61,7 +62,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
                   alt="Daniel Bodnar" 
                   className="rounded-2xl w-full max-w-xs mx-auto shadow-2xl border-2 border-gray-100"
                 />
