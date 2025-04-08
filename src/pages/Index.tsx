@@ -16,9 +16,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Hero Section with equal spacing between nav and "Who Am I?" section */}
-      <header className="relative overflow-hidden bg-black h-screen flex flex-col">
-        {/* Navigation Floating on Top */}
+      {/* Hero Section */}
+      <header className="relative bg-black">
+        {/* Navigation */}
         <div className="container mx-auto px-6 py-6">
           <nav>
             <div className="flex items-center justify-between px-6 py-3 rounded-lg">
@@ -35,15 +35,13 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Header Content - Centered with equal spacing from top and bottom */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
-              <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
-                Guidance that flows, brand that sticks
-              </p>
-            </div>
+        {/* Hero Content with appropriate spacing */}
+        <div className="container mx-auto px-6 py-24">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
+            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
+              Guidance that flows, brand that sticks
+            </p>
           </div>
         </div>
       </header>
