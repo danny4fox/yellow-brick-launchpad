@@ -5,7 +5,7 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 
-const Index = () => {
+const IndexAlternate = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com";
   
@@ -28,8 +28,8 @@ const Index = () => {
               </a>
               
               <div className="flex items-center gap-4">
-                <Link to="/alternate" className="text-white/70 hover:text-white transition-colors">
-                  Alternate Version
+                <Link to="/" className="text-white/70 hover:text-white transition-colors">
+                  Original Version
                 </Link>
                 <ActionButton href={calendarUrl}>
                   Free Consultation
@@ -198,4 +198,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default IndexAlternate;
