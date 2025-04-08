@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
       {/* Hero Section without Video Background - Height reduced by 35% */}
-      <header className="relative overflow-hidden bg-black min-h-[45.5vh]">
+      <header className="relative overflow-hidden bg-black min-h-[45.5vh] flex flex-col">
         {/* Navigation Floating on Top */}
         <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
           <nav className="py-6">
@@ -35,8 +35,8 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Header Content - Centered in the remaining space with adjusted spacing */}
-        <div className="flex items-center justify-center h-full pt-28"> {/* Added padding-top to move content down */}
+        {/* Header Content - Perfectly centered both horizontally and vertically */}
+        <div className="flex-1 flex items-center justify-center">
           <div className="container mx-auto px-6">
             <div className="flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
