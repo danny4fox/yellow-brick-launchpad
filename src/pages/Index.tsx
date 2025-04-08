@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -41,8 +42,8 @@ const Index = () => {
       </header>
 
       <main>
-        {/* Who Am I Section - Dark with border */}
-        <section id="about" className="py-20 bg-darknavy">
+        {/* Who Am I Section - Now with black background */}
+        <section id="about" className="py-20 bg-black">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
@@ -88,8 +89,8 @@ const Index = () => {
           <Separator className="my-0 bg-white/10" />
         </div>
 
-        {/* What Am I Doing Section - Gradient background */}
-        <section id="services" className="py-20 bg-gradient-to-b from-darknavy to-darknavy/80">
+        {/* What Am I Doing Section - Gradient with black */}
+        <section id="services" className="py-20 bg-gradient-to-b from-black to-darknavy/90">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">What Am I Doing?</h2>
@@ -99,27 +100,27 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Services Cards */}
+            {/* Services Cards - Now with black background */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
+              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
                 <h3 className="font-bold text-xl mb-4 text-neon">Explainer Videos</h3>
                 <p className="text-base text-white/80">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
+              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
                 <h3 className="font-bold text-xl mb-4 text-neon">UI & Product Demos</h3>
                 <p className="text-base text-white/80">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
+              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
                 <h3 className="font-bold text-xl mb-4 text-neon">Support & Help Center Videos</h3>
                 <p className="text-base text-white/80">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
+              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
                 <h3 className="font-bold text-xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
                 <p className="text-base text-white/80">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
@@ -129,10 +130,10 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - With new contrasting background */}
+        {/* CTA Section - With better contrast using black and neon */}
         <section id="contact" className="py-20 relative overflow-hidden">
-          {/* Gradient background with more contrast */}
-          <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-darknavy"></div>
+          {/* Black gradient background with more contrast */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black to-darknavy"></div>
           
           {/* Light effect for better contrast */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
@@ -155,8 +156,8 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-black/40 text-center py-6 text-white/60 text-sm">
+      {/* Footer - Now pure black */}
+      <footer className="bg-black text-center py-6 text-white/60 text-sm">
         <p>© {new Date().getFullYear()} | Coming Soon</p>
       </footer>
     </div>
