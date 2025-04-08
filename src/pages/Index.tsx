@@ -16,22 +16,22 @@ const Index = () => {
   const youtubeVideoId = "CLaTNJ2Nh9k";
 
   return (
-    <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Hero Section */}
-      <header className="relative bg-black">
+    <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
+      {/* Hero Section with frosted glass navbar */}
+      <header className="relative bg-gradient-to-r from-black to-darknavy/90">
         {/* Navigation */}
         <div className="container mx-auto px-6 py-6">
           <nav>
-            <div className="flex items-center justify-between px-6 py-3 rounded-lg">
-              <a href="/" className="text-2xl font-bold">
+            <div className="flex items-center justify-between px-8 py-4 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-lg">
+              <a href="/" className="text-2xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
-              <div className="flex items-center gap-4">
-                <Link to="/alternate" className="text-white/70 hover:text-white transition-colors">
+              <div className="flex items-center gap-6">
+                <Link to="/alternate" className="text-white/80 hover:text-white transition-colors">
                   Alternate Version
                 </Link>
-                <ActionButton href={calendarUrl}>
+                <ActionButton href={calendarUrl} className="shadow-xl">
                   Free Consultation
                 </ActionButton>
               </div>
@@ -39,38 +39,43 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Hero Content with appropriate spacing */}
-        <div className="container mx-auto px-6 py-24">
+        {/* Hero Content with improved spacing */}
+        <div className="container mx-auto px-6 py-32">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
-            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
-              Guidance that flows, brand that sticks
-            </p>
+            <div className="space-y-6 max-w-4xl">
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+                Bringing SaaS, IoT Brands to Life <br className="hidden md:block" />
+                <span className="text-neon">with Motion Graphics</span>
+              </h1>
+              <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/90 font-light">
+                Guidance that flows, brand that sticks
+              </p>
+            </div>
           </div>
         </div>
       </header>
 
       <main>
-        {/* Who Am I Section - Now with black background */}
-        <section id="about" className="py-24 bg-black">
+        {/* About Section with white background */}
+        <section id="about" className="py-24 bg-white text-darknavy">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
                 <img 
                   src="/public/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
                   alt="Daniel Bodnar" 
-                  className="rounded-2xl w-full max-w-xs mx-auto shadow-xl border-2 border-white/10"
+                  className="rounded-2xl w-full max-w-xs mx-auto shadow-2xl border-2 border-gray-100"
                 />
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Am I?</h2>
-                <div className="space-y-4 text-base text-white/80">
+                <div className="space-y-4 text-base text-darknavy/80">
                   <p>
                     Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
                     I've worked with 500+ small and mid-sized businesses across Hungary as a Regional Digital Marketing Consultant at Google, 
                     diving deep into marketing strategies and spotting one common theme:
                   </p>
-                  <p className="text-lg font-medium text-neon">
+                  <p className="text-lg font-medium text-darknavy">
                     👉 Video content was full of untapped potential.
                   </p>
                   <p>
@@ -93,67 +98,55 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Separator */}
-        <div className="container mx-auto px-6">
-          <Separator className="bg-white/10" />
-        </div>
-
-        {/* Video Showcase Section */}
-        <section className="py-24 bg-gradient-to-tr from-black to-darknavy relative overflow-hidden">
+        {/* Video Showcase Section - Modern gradient background */}
+        <section className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">My Work</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">My Work</h2>
               <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
                 Check out this example of my motion design work
               </p>
             </div>
-            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-white/10">
+            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-white/5 backdrop-blur-sm p-1">
               <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
             </div>
           </div>
         </section>
 
-        {/* Separator */}
-        <div className="container mx-auto px-6">
-          <Separator className="bg-white/10" />
-        </div>
-
-        {/* What Am I Doing Section */}
-        <section id="services" className="py-24 relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/90 to-darknavy/80 z-10"></div>
-          
+        {/* What Am I Doing Section - Clean white background */}
+        <section id="services" className="py-24 bg-white text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">What Am I Doing?</h2>
-              <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">What Am I Doing?</h2>
+              <p className="text-base md:text-lg max-w-3xl mx-auto text-darknavy/80">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-xl mb-4 text-neon">Explainer Videos</h3>
-                <p className="text-base text-white/80">
+              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-xl mb-4 text-darknavy">Explainer Videos</h3>
+                <p className="text-base text-darknavy/80">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-xl mb-4 text-neon">UI & Product Demos</h3>
-                <p className="text-base text-white/80">
+              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-xl mb-4 text-darknavy">UI & Product Demos</h3>
+                <p className="text-base text-darknavy/80">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-xl mb-4 text-neon">Support & Help Center Videos</h3>
-                <p className="text-base text-white/80">
+              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-xl mb-4 text-darknavy">Support & Help Center Videos</h3>
+                <p className="text-base text-darknavy/80">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-black/70 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
-                <p className="text-base text-white/80">
+              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-xl mb-4 text-darknavy">Marketing & Social Motion Graphics</h3>
+                <p className="text-base text-darknavy/80">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
               </div>
@@ -161,38 +154,39 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Separator */}
-        <div className="container mx-auto px-6">
-          <Separator className="bg-white/10" />
-        </div>
-
-        {/* CTA Section */}
-        <section id="contact" className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-tr from-black to-darknavy"></div>
-          
+        {/* CTA Section - Refined dark section with subtle glass effect */}
+        <section id="contact" className="py-28 relative overflow-hidden bg-gradient-to-br from-darknavy to-black">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="text-center mb-10">
-              <p className="text-lg text-white max-w-2xl mx-auto">
-                Let's connect for a free consultation and explore how motion design can elevate your marketing :)
-              </p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
-              <ActionButton href={linkedInUrl} inverse={true}>
-                Connect on LinkedIn
-              </ActionButton>
-              <ActionButton href={calendarUrl} className="bg-neon hover:bg-neon/80 text-darknavy font-bold">
-                Schedule a Meeting
-              </ActionButton>
+            <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 shadow-2xl p-12">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Brand?</h2>
+                <p className="text-lg text-white/90 max-w-2xl mx-auto">
+                  Let's connect for a free consultation and explore how motion design can elevate your marketing.
+                </p>
+              </div>
+              <div className="flex flex-col md:flex-row gap-6 justify-center">
+                <ActionButton href={linkedInUrl} inverse={true} className="border-white/20">
+                  Connect on LinkedIn
+                </ActionButton>
+                <ActionButton href={calendarUrl} className="bg-neon hover:bg-neon/90 text-darknavy font-bold">
+                  Schedule a Meeting
+                </ActionButton>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-black text-center py-8 text-white/60 text-sm">
-        <p>© {new Date().getFullYear()} | Coming Soon</p>
+      <footer className="bg-black text-center py-10 text-white/60 text-sm">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <p className="text-base font-light">© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
+            <p className="text-xs text-white/40">Bay Area · Copenhagen</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
