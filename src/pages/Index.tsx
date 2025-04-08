@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -15,11 +16,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Hero Section with adjusted vertical positioning */}
-      <header className="relative overflow-hidden bg-black h-[70vh] flex items-center">
+      {/* Hero Section with equal spacing between nav and "Who Am I?" section */}
+      <header className="relative overflow-hidden bg-black h-screen flex flex-col">
         {/* Navigation Floating on Top */}
-        <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
-          <nav className="py-6">
+        <div className="container mx-auto px-6 py-6">
+          <nav>
             <div className="flex items-center justify-between px-6 py-3 rounded-lg">
               <a href="/" className="text-2xl font-bold">
                 <span className="text-neon">*</span> Daniel Bodnar
@@ -34,13 +35,15 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Header Content - Adjusted vertical positioning (reduced top distance by 10%, bottom by 20%) */}
-        <div className="container mx-auto px-6 mt-8 mb-12">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
-            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
-              Guidance that flows, brand that sticks
-            </p>
+        {/* Header Content - Centered with equal spacing from top and bottom */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
+              <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
+                Guidance that flows, brand that sticks
+              </p>
+            </div>
           </div>
         </div>
       </header>
