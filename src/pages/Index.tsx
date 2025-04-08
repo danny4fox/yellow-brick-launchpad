@@ -20,7 +20,7 @@ const Index = () => {
       <header className="relative overflow-hidden bg-black min-h-[45.5vh]">
         {/* Navigation Floating on Top */}
         <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
-          <nav className="py-8">
+          <nav className="py-6">
             <div className="flex items-center justify-between px-6 py-3 rounded-lg">
               <a href="/" className="text-2xl font-bold">
                 <span className="text-neon">*</span> Daniel Bodnar
@@ -35,9 +35,9 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Header Content - Centered in the remaining space */}
-        <div className="flex items-center justify-center h-full">
-          <div className="container mx-auto px-6 py-16">
+        {/* Header Content - Centered in the remaining space with adjusted spacing */}
+        <div className="flex items-center justify-center h-full pt-28"> {/* Added padding-top to move content down */}
+          <div className="container mx-auto px-6">
             <div className="flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
               <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
