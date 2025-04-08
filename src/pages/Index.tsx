@@ -89,6 +89,27 @@ const Index = () => {
           <Separator className="my-0 bg-white/10" />
         </div>
 
+        {/* Video Showcase Section */}
+        <section className="py-20 bg-gradient-to-tr from-black to-darknavy relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">My Work</h2>
+              <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
+                Check out this example of my motion design work
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-white/10">
+              <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
+            </div>
+          </div>
+        </section>
+
+        {/* Separator */}
+        <div className="container mx-auto px-6">
+          <Separator className="my-0 bg-white/10" />
+        </div>
+
         {/* What Am I Doing Section with Video Background */}
         <section id="services" className="py-20 relative">
           {/* Video Background */}
