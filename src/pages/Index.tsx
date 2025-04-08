@@ -42,7 +42,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* My Journey Section - Dark with border */}
+        {/* Who Am I Section - Dark with border */}
         <section className="py-20 bg-darknavy">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -54,7 +54,7 @@ const Index = () => {
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8">My Journey</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-8">Who Am I?</h2>
                 <div className="space-y-4 text-lg text-white/80">
                   <p>
                     Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
