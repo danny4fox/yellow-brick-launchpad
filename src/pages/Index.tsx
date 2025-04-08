@@ -17,16 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
       {/* Hero Section without Video Background - Height reduced by 35% */}
-      <header className="relative overflow-hidden bg-black min-h-[45.5vh] flex items-center">
-        <div className="container mx-auto px-6 py-16">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
-            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
-              Guidance that flows, brand that sticks
-            </p>
-          </div>
-        </div>
-        
+      <header className="relative overflow-hidden bg-black min-h-[45.5vh]">
         {/* Navigation Floating on Top */}
         <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
           <nav className="py-8">
@@ -42,6 +33,18 @@ const Index = () => {
               </div>
             </div>
           </nav>
+        </div>
+        
+        {/* Header Content - Centered in the remaining space */}
+        <div className="flex items-center justify-center h-full">
+          <div className="container mx-auto px-6 py-16">
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
+              <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
+                Guidance that flows, brand that sticks
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
