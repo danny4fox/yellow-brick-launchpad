@@ -16,30 +16,34 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Header Video Section */}
-      <div className="w-full">
-        <VideoEmbed youtubeId={youtubeVideoId} />
-      </div>
-
-      {/* Navigation */}
-      <nav className="container mx-auto px-6 py-6 flex items-center justify-between">
-        <a href="/" className="text-2xl font-bold">
-          <span className="text-neon">*</span> Daniel Bodnar
-        </a>
-        
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="hover:text-neon transition-colors">Services</a>
-          <a href="#about" className="hover:text-neon transition-colors">About</a>
-          <a href="#contact" className="hover:text-neon transition-colors">Contact</a>
-          <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
-            Join Waitlist
-          </ActionButton>
+      {/* Header Section with Video */}
+      <header className="relative w-full">
+        <div className="absolute inset-0 z-10">
+          <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
         </div>
-      </nav>
+        
+        <div className="relative z-20 pt-[56.25vw]">
+          {/* Navigation */}
+          <nav className="container mx-auto px-6 py-6 flex items-center justify-between">
+            <a href="/" className="text-2xl font-bold">
+              <span className="text-neon">*</span> Daniel Bodnar
+            </a>
+            
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#services" className="hover:text-neon transition-colors">Services</a>
+              <a href="#about" className="hover:text-neon transition-colors">About</a>
+              <a href="#contact" className="hover:text-neon transition-colors">Contact</a>
+              <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
+                Join Waitlist
+              </ActionButton>
+            </div>
+          </nav>
+        </div>
+      </header>
 
       <main>
         {/* Who Am I Section - Dark with border */}
-        <section className="py-20 bg-darknavy">
+        <section id="about" className="py-20 bg-darknavy">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
