@@ -16,11 +16,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Hero Section with Video Background */}
-      <header className="relative overflow-hidden">
-        {/* Video Background */}
+      {/* Hero Section without Video Background */}
+      <header className="relative overflow-hidden bg-black py-20">
         <div className="container mx-auto px-6">
-          <VideoEmbed youtubeId={youtubeVideoId} isHero={true} />
+          <div className="flex flex-col items-center justify-center text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Motion Design <span className="text-neon">That Moves</span></h1>
+            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
+              Bringing clarity to complex concepts through animation
+            </p>
+          </div>
         </div>
         
         {/* Navigation Floating on Top */}
@@ -110,13 +114,8 @@ const Index = () => {
           <Separator className="my-0 bg-white/10" />
         </div>
 
-        {/* What Am I Doing Section with Video Background */}
+        {/* What Am I Doing Section - Removed video background */}
         <section id="services" className="py-20 relative">
-          {/* Video Background */}
-          <div className="absolute inset-0 z-0 opacity-30">
-            <VideoEmbed youtubeId={youtubeVideoId} isBackground={true} />
-          </div>
-          
           {/* Black overlay with 45-degree gradient */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/90 to-darknavy/80 z-10"></div>
           
