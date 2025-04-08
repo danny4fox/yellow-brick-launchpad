@@ -37,8 +37,8 @@ const Index = () => {
           <VideoEmbed youtubeId={youtubeVideoId} />
         </div>
 
-        {/* Why Choose Me Section */}
-        <div className="mb-20 py-16 px-6 rounded-3xl bg-darknavy border border-white/10 max-w-5xl mx-auto">
+        {/* Why Choose Me Section - adjusted width to match container */}
+        <div className="mb-20 py-16 px-6 rounded-3xl bg-darknavy border border-white/10 mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">Why Choose Me</h2>
             <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80">
