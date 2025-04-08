@@ -2,7 +2,6 @@
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
-import { Upload } from 'lucide-react';
 
 const Index = () => {
   // Replace with your actual LinkedIn URL
@@ -16,18 +15,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Header */}
-      <header className="relative w-full">
-        <img 
-          src="/lovable-uploads/4380031d-17a7-45ce-9c2e-6599382f1c30.png" 
-          alt="Video that makes sense" 
-          className="w-full h-auto md:h-[40vh] object-cover"
-        />
-        <div className="absolute inset-0 bg-darknavy/50">
-          {/* Intentionally empty for overlay */}
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col items-center">
           {/* Main Heading */}
@@ -65,18 +52,6 @@ const Index = () => {
             <ActionButton href={calendarUrl}>
               Schedule a Meeting
             </ActionButton>
-          </div>
-
-          {/* Worked with logos */}
-          <div className="mb-8">
-            <h4 className="text-neon text-sm mb-4 font-medium">worked with</h4>
-            <div className="flex flex-wrap justify-center gap-8 opacity-80">
-              <span className="text-white font-medium">Google</span>
-              <span className="text-white font-medium">Digital Quest</span>
-              <span className="text-white font-medium">Turf Tank</span>
-              <span className="text-white font-medium">Roskrask</span>
-              <span className="text-white font-medium">sign.com</span>
-            </div>
           </div>
         </div>
       </main>
