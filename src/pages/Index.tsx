@@ -103,25 +103,25 @@ const Index = () => {
             {/* Services Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Explainer Videos</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">Explainer Videos</h3>
                 <p className="text-white/80">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">✅ UI & Product Demos</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">UI & Product Demos</h3>
                 <p className="text-white/80">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Support & Help Center Videos</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">Support & Help Center Videos</h3>
                 <p className="text-white/80">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Marketing & Social Motion Graphics</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
                 <p className="text-white/80">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
@@ -161,3 +161,4 @@ const Index = () => {
 };
 
 export default Index;
+
