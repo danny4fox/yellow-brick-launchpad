@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -18,7 +19,7 @@ const Index = () => {
       {/* Hero Section with Video Background */}
       <header className="relative h-screen overflow-hidden">
         {/* Video Background */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 container mx-auto px-6">
           <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} isHero={true} />
           {/* Dark overlay to improve text readability */}
           <div className="absolute inset-0 bg-black/40"></div>

@@ -14,17 +14,15 @@ const VideoEmbed: React.FC<VideoEmbedProps> = ({ youtubeId, fullWidth = false, i
     : '';
 
   return (
-    <div className={`${fullWidth ? 'w-full' : 'container mx-auto px-6'}`}>
-      <AspectRatio ratio={16 / 9} className={`overflow-hidden ${isHero ? 'h-full' : ''}`}>
-        <iframe
-          className="w-full h-full border-0"
-          src={`https://www.youtube.com/embed/${youtubeId}${videoParams}`}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio>
-    </div>
+    <AspectRatio ratio={16 / 9} className={`overflow-hidden ${isHero ? 'h-full' : ''}`}>
+      <iframe
+        className="w-full h-full border-0"
+        src={`https://www.youtube.com/embed/${youtubeId}${videoParams}`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </AspectRatio>
   );
 };
 
