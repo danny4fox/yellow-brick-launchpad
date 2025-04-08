@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -17,9 +18,9 @@ const Index = () => {
     <div className="min-h-screen bg-darknavy text-white font-sans">
       {/* Hero Section without Video Background */}
       <header className="relative overflow-hidden bg-black min-h-[70vh] flex items-center">
-        <div className="container mx-auto px-6 py-24 my-12">
+        <div className="container mx-auto px-6 py-24">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
             <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
               Guidance that flows, brand that sticks
             </p>
@@ -28,7 +29,7 @@ const Index = () => {
         
         {/* Navigation Floating on Top */}
         <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
-          <nav className="py-6">
+          <nav className="py-8">
             <div className="flex items-center justify-between px-6 py-3 rounded-lg">
               <a href="/" className="text-2xl font-bold">
                 <span className="text-neon">*</span> Daniel Bodnar
@@ -46,7 +47,7 @@ const Index = () => {
 
       <main>
         {/* Who Am I Section - Now with black background */}
-        <section id="about" className="py-20 bg-black">
+        <section id="about" className="py-24 bg-black">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
@@ -89,15 +90,15 @@ const Index = () => {
 
         {/* Separator */}
         <div className="container mx-auto px-6">
-          <Separator className="my-0 bg-white/10" />
+          <Separator className="bg-white/10" />
         </div>
 
         {/* Video Showcase Section */}
-        <section className="py-20 bg-gradient-to-tr from-black to-darknavy relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-tr from-black to-darknavy relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
           <div className="container mx-auto px-6">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">My Work</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">My Work</h2>
               <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
                 Check out this example of my motion design work
               </p>
@@ -110,11 +111,11 @@ const Index = () => {
 
         {/* Separator */}
         <div className="container mx-auto px-6">
-          <Separator className="my-0 bg-white/10" />
+          <Separator className="bg-white/10" />
         </div>
 
         {/* What Am I Doing Section - Removed video background */}
-        <section id="services" className="py-20 relative">
+        <section id="services" className="py-24 relative">
           {/* Black overlay with 45-degree gradient */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/90 to-darknavy/80 z-10"></div>
           
@@ -157,8 +158,13 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Separator */}
+        <div className="container mx-auto px-6">
+          <Separator className="bg-white/10" />
+        </div>
+
         {/* CTA Section - With 45-degree gradient */}
-        <section id="contact" className="py-20 relative overflow-hidden">
+        <section id="contact" className="py-24 relative overflow-hidden">
           {/* Black gradient background with 45-degree angle */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black to-darknavy"></div>
           
@@ -166,7 +172,7 @@ const Index = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="text-center mb-8">
+            <div className="text-center mb-10">
               <p className="text-lg text-white max-w-2xl mx-auto">
                 Let's connect for a free consultation and explore how motion design can elevate your marketing :)
               </p>
@@ -184,7 +190,7 @@ const Index = () => {
       </main>
 
       {/* Footer - Now pure black */}
-      <footer className="bg-black text-center py-6 text-white/60 text-sm">
+      <footer className="bg-black text-center py-8 text-white/60 text-sm">
         <p>© {new Date().getFullYear()} | Coming Soon</p>
       </footer>
     </div>
