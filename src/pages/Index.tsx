@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -27,38 +26,22 @@ const Index = () => {
         
         {/* Navigation Floating on Top */}
         <div className="relative z-20 container mx-auto px-6">
-          <nav className="py-6 flex items-center justify-between">
-            <a href="/" className="text-2xl font-bold">
-              <span className="text-neon">*</span> Daniel Bodnar
-            </a>
-            
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="hover:text-neon transition-colors">Services</a>
-              <a href="#about" className="hover:text-neon transition-colors">About</a>
-              <a href="#contact" className="hover:text-neon transition-colors">Contact</a>
-              <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
-                Join Waitlist
-              </ActionButton>
+          <nav className="py-6">
+            <div className="flex items-center justify-between bg-white/40 backdrop-blur-sm px-6 py-3 rounded-lg">
+              <a href="/" className="text-2xl font-bold">
+                <span className="text-neon">*</span> Daniel Bodnar
+              </a>
+              
+              <div className="hidden md:flex items-center gap-8">
+                <a href="#services" className="hover:text-neon transition-colors">Services</a>
+                <a href="#about" className="hover:text-neon transition-colors">About</a>
+                <a href="#contact" className="hover:text-neon transition-colors">Contact</a>
+                <ActionButton href={calendarUrl} className="bg-pink-500 hover:bg-pink-600">
+                  Join Waitlist
+                </ActionButton>
+              </div>
             </div>
           </nav>
-          
-          {/* Hero Content */}
-          <div className="flex flex-col items-center justify-center h-[calc(100vh-80px)] text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Motion Graphics for <span className="text-neon">Tech Companies</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-              Bringing clarity to complex products through compelling visual storytelling
-            </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <ActionButton href="#services" className="text-lg px-8 py-3">
-                See My Services
-              </ActionButton>
-              <ActionButton href={calendarUrl} className="text-lg px-8 py-3 bg-pink-500 hover:bg-pink-600">
-                Book a Call
-              </ActionButton>
-            </div>
-          </div>
         </div>
       </header>
 
