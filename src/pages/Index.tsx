@@ -16,15 +16,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Header Section with Video */}
-      <header className="relative w-full">
-        <div className="absolute inset-0 z-10">
-          <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
+      {/* Hero Section with Video Background */}
+      <header className="relative h-screen overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0">
+          <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} isHero={true} />
+          {/* Dark overlay to improve text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
-        <div className="relative z-20 pt-[56.25vw]">
-          {/* Navigation */}
-          <nav className="container mx-auto px-6 py-6 flex items-center justify-between">
+        {/* Navigation Floating on Top */}
+        <div className="relative z-20 container mx-auto px-6">
+          <nav className="py-6 flex items-center justify-between">
             <a href="/" className="text-2xl font-bold">
               <span className="text-neon">*</span> Daniel Bodnar
             </a>
@@ -38,6 +41,24 @@ const Index = () => {
               </ActionButton>
             </div>
           </nav>
+          
+          {/* Hero Content */}
+          <div className="flex flex-col items-center justify-center h-[calc(100vh-80px)] text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Motion Graphics for <span className="text-neon">Tech Companies</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-2xl">
+              Bringing clarity to complex products through compelling visual storytelling
+            </p>
+            <div className="flex flex-col md:flex-row gap-4">
+              <ActionButton href="#services" className="text-lg px-8 py-3">
+                See My Services
+              </ActionButton>
+              <ActionButton href={calendarUrl} className="text-lg px-8 py-3 bg-pink-500 hover:bg-pink-600">
+                Book a Call
+              </ActionButton>
+            </div>
+          </div>
         </div>
       </header>
 
