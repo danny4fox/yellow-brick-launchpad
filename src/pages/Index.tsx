@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -53,14 +54,14 @@ const Index = () => {
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8">Who Am I?</h2>
-                <div className="space-y-4 text-lg text-white/80">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Am I?</h2>
+                <div className="space-y-4 text-base text-white/80">
                   <p>
                     Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
                     I've worked with 500+ small and mid-sized businesses across Hungary as a Regional Digital Marketing Consultant at Google, 
                     diving deep into marketing strategies and spotting one common theme:
                   </p>
-                  <p className="text-xl font-medium text-neon">
+                  <p className="text-lg font-medium text-neon">
                     👉 Video content was full of untapped potential.
                   </p>
                   <p>
@@ -92,8 +93,8 @@ const Index = () => {
         <section id="services" className="py-20 bg-gradient-to-b from-darknavy to-darknavy/80">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6">What Am I Doing?</h2>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">What Am I Doing?</h2>
+              <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
@@ -102,26 +103,26 @@ const Index = () => {
             {/* Services Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">Explainer Videos</h3>
-                <p className="text-white/80">
+                <h3 className="font-bold text-xl mb-4 text-neon">Explainer Videos</h3>
+                <p className="text-base text-white/80">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">UI & Product Demos</h3>
-                <p className="text-white/80">
+                <h3 className="font-bold text-xl mb-4 text-neon">UI & Product Demos</h3>
+                <p className="text-base text-white/80">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">Support & Help Center Videos</h3>
-                <p className="text-white/80">
+                <h3 className="font-bold text-xl mb-4 text-neon">Support & Help Center Videos</h3>
+                <p className="text-base text-white/80">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
-                <p className="text-white/80">
+                <h3 className="font-bold text-xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
+                <p className="text-base text-white/80">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
               </div>
@@ -134,7 +135,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-neon/5 blur-3xl rounded-full mx-auto w-1/2 h-1/2 my-auto opacity-20"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-8">
-              <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Let's connect for a free consultation and explore how motion design can elevate your marketing :)
               </p>
             </div>
