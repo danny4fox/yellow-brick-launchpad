@@ -89,11 +89,11 @@ const Index = () => {
           <Separator className="my-0 bg-white/10" />
         </div>
 
-        {/* Why Choose Me Section - Gradient background */}
+        {/* What Am I Doing Section - Gradient background */}
         <section id="services" className="py-20 bg-gradient-to-b from-darknavy to-darknavy/80">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6">Why Choose Me</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-6">What Am I Doing?</h2>
               <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
@@ -101,26 +101,29 @@ const Index = () => {
             </div>
 
             {/* Services Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">Tech Expertise</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Explainer Videos</h3>
                 <p className="text-white/80">
-                  I specialize in SaaS, IoT, and Robotics industries, understanding your unique 
-                  needs and audience.
+                  Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">Conversion Focused</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">✅ UI & Product Demos</h3>
                 <p className="text-white/80">
-                  My videos aren't just pretty—they're strategically designed to drive user 
-                  action and business growth.
+                  Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
-                <h3 className="font-bold text-2xl mb-4 text-neon">End-to-End Service</h3>
+                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Support & Help Center Videos</h3>
                 <p className="text-white/80">
-                  From concept to final delivery, I handle the entire production process with 
-                  meticulous attention to detail.
+                  Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
+                </p>
+              </div>
+              <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-neon/50 transition-all">
+                <h3 className="font-bold text-2xl mb-4 text-neon">✅ Marketing & Social Motion Graphics</h3>
+                <p className="text-white/80">
+                  Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
               </div>
             </div>
