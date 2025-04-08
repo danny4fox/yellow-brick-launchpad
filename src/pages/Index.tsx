@@ -37,6 +37,46 @@ const Index = () => {
           <VideoEmbed youtubeId={youtubeVideoId} />
         </div>
 
+        {/* My Journey Section */}
+        <div className="mb-20 mx-auto">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/3">
+              <img 
+                src="/public/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
+                alt="Daniel Bodnar" 
+                className="rounded-2xl w-full max-w-xs mx-auto shadow-xl"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">My Journey</h2>
+              <div className="space-y-4 text-lg text-white/80">
+                <p>
+                  Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
+                  I've worked with 500+ small and mid-sized businesses across Hungary as a Regional Digital Marketing Consultant at Google, 
+                  diving deep into marketing strategies and spotting one common theme:
+                </p>
+                <p className="text-xl font-medium text-neon">
+                  👉 Video content was full of untapped potential.
+                </p>
+                <p>
+                  That discovery kicked off my obsession with animation—specifically, how it can connect ideas, people, and products in ways no other medium can.
+                </p>
+                <p>
+                  After relocating to tech-forward Denmark, I rebuilt my career from the ground up and dove headfirst into the world of motion design. 
+                  Today, I help innovative companies—especially in SaaS, IoT, and Robotics—bring clarity to complex concepts.
+                </p>
+                <p>
+                  I'm all about delivering the highest amount of meaning in the least amount of time—no fluff, just crystal-clear communication. 
+                  And what better way to do that than with motion design?
+                </p>
+                <p className="italic font-medium">
+                  We live in a world that's moving fast. Understanding it shouldn't slow us down.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Why Choose Me Section - adjusted width to match container */}
         <div className="mb-20 py-16 px-6 rounded-3xl bg-darknavy border border-white/10 mx-auto">
           <div className="text-center mb-12">
