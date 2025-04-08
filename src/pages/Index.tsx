@@ -89,9 +89,17 @@ const Index = () => {
           <Separator className="my-0 bg-white/10" />
         </div>
 
-        {/* What Am I Doing Section - Gradient with black */}
-        <section id="services" className="py-20 bg-gradient-to-b from-black to-darknavy/90">
-          <div className="container mx-auto px-6">
+        {/* What Am I Doing Section with Video Background */}
+        <section id="services" className="py-20 relative">
+          {/* Video Background */}
+          <div className="absolute inset-0 z-0 opacity-30">
+            <VideoEmbed youtubeId={youtubeVideoId} isBackground={true} />
+          </div>
+          
+          {/* Black overlay with 45-degree gradient */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/90 to-darknavy/80 z-10"></div>
+          
+          <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">What Am I Doing?</h2>
               <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
@@ -130,10 +138,10 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - With better contrast using black and neon */}
+        {/* CTA Section - With 45-degree gradient */}
         <section id="contact" className="py-20 relative overflow-hidden">
-          {/* Black gradient background with more contrast */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black to-darknavy"></div>
+          {/* Black gradient background with 45-degree angle */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-black to-darknavy"></div>
           
           {/* Light effect for better contrast */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-neon/10 blur-3xl rounded-full opacity-30"></div>
