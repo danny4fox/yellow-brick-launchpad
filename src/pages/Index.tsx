@@ -15,8 +15,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-darknavy text-white font-sans">
-      {/* Hero Section without Video Background - Height reduced by 35% */}
-      <header className="relative overflow-hidden bg-black min-h-[65vh] flex items-center justify-center">
+      {/* Hero Section with perfectly centered content */}
+      <header className="relative overflow-hidden bg-black h-[70vh] flex items-center">
         {/* Navigation Floating on Top */}
         <div className="absolute top-0 left-0 right-0 z-20 container mx-auto px-6">
           <nav className="py-6">
@@ -34,8 +34,8 @@ const Index = () => {
           </nav>
         </div>
         
-        {/* Header Content - TRULY centered both horizontally and vertically */}
-        <div className="container mx-auto px-6">
+        {/* Header Content - Positioned exactly in the middle between nav and "Who Am I?" section */}
+        <div className="container mx-auto px-6 mt-16">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-8">Bringing SaaS, IoT Brands to Life <br className="hidden md:block" /><span className="text-neon">with Motion Graphics</span></h1>
             <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/80">
@@ -114,7 +114,7 @@ const Index = () => {
           <Separator className="bg-white/10" />
         </div>
 
-        {/* What Am I Doing Section - Removed video background */}
+        {/* What Am I Doing Section */}
         <section id="services" className="py-24 relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/90 to-darknavy/80 z-10"></div>
           
@@ -161,7 +161,7 @@ const Index = () => {
           <Separator className="bg-white/10" />
         </div>
 
-        {/* CTA Section - With 45-degree gradient */}
+        {/* CTA Section */}
         <section id="contact" className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-tr from-black to-darknavy"></div>
           
@@ -185,7 +185,7 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer - Now pure black */}
+      {/* Footer */}
       <footer className="bg-black text-center py-8 text-white/60 text-sm">
         <p>© {new Date().getFullYear()} | Coming Soon</p>
       </footer>
