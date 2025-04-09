@@ -41,9 +41,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         textOnly ? 'px-0 py-0' : 'px-8 py-3 text-base rounded-full'
       } ${
         textOnly
-          ? gradient 
-              ? 'bg-clip-text text-transparent bg-gradient-to-r from-purple via-pink to-neon hover:scale-105' 
-              : 'text-white'
+          ? 'text-white border border-neon rounded-full px-4 py-2'
           : gradient
             ? 'bg-gradient-to-r from-darknavy via-pink to-pink text-white hover:shadow-[0_8px_16px_rgba(244,42,166,0.4)]'
             : inverse 
@@ -53,7 +51,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
     >
       {glow ? (
         <div className="relative">
-          <span className={`absolute ${textOnly ? '-inset-1' : '-inset-2'} ${textOnly && gradient ? 'bg-gradient-to-r from-purple via-pink to-neon' : ''} animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow`}></span>
+          <span className={`absolute ${textOnly ? '-inset-1' : '-inset-2'} ${textOnly ? 'bg-gradient-to-r from-purple via-pink to-neon' : ''} animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow`}></span>
           {wave ? (
             <span className="text-container inline-flex relative z-10">
               {content}
