@@ -278,9 +278,12 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section with dark radial gradient background */}
-        <section id="contact" className="py-24 relative overflow-hidden bg-darknavy">
-          <div className="absolute inset-0 w-full h-full bg-[radial-gradient(circle_at_center,_#6C51F580_0%,_#221F26_50%,_#0E0B1D_100%)] opacity-80"></div>
+        {/* CTA Section - Updated to match header background */}
+        <section id="contact" className="py-24 relative bg-darknavy text-white overflow-hidden">
+          {/* Background Video - same as header */}
+          <div className="absolute inset-0 w-full h-full opacity-20 z-0">
+            <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
+          </div>
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
