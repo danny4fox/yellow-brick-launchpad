@@ -288,11 +288,11 @@ const Index = () => {
         </section>
 
         {/* CTA Section - Updated with gradient background transition */}
-        <section id="contact" className="py-24 relative overflow-hidden bg-section-transition">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/5 via-neon/5 to-pink/5 blur-3xl rounded-full opacity-40"></div>
+        <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-purple via-darknavy/90 to-pink">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/30 via-neon/20 to-pink/30 blur-3xl rounded-full opacity-40"></div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto bg-darknavy backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
+            <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Ready to Elevate Your Brand?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
