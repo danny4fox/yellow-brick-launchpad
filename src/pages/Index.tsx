@@ -187,20 +187,20 @@ const Index = () => {
           </div>
         </section>
 
-        {/* What Am I Doing Section - High contrast light background */}
+        {/* What Am I Doing Section - High contrast light background with improved alignment */}
         <section id="services" className="py-24 bg-gradient-to-br from-white to-gray-50 text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-16">
-              <div className="inline-block bg-gradient-to-r from-darknavy to-darknavy/90 rounded-xl p-2 mb-8 shadow-lg transform -rotate-1">
-                <h2 className="text-3xl md:text-5xl font-bold text-neon px-8 py-2">What Am I Doing?</h2>
-              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
+                <span className="relative z-10 text-darknavy">What Am I Doing?</span>
+              </h2>
               <p className="text-base md:text-xl max-w-3xl mx-auto text-darknavy font-semibold">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
@@ -244,14 +244,14 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Swapped light/dark elements */}
+        {/* CTA Section - Swapped light/dark elements with improved alignment */}
         <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-white to-gray-100">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto bg-darknavy backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
               <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-neon">Ready to Elevate Your Brand?</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Ready to Elevate Your Brand?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
                   Let's connect for a free consultation and explore how motion design can elevate your marketing.
                 </p>
