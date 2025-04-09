@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -161,7 +160,9 @@ const Index = () => {
                 </span>
                 
                 <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
-                  <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
+                  <span className="transition-all duration-300 group-hover:opacity-0">
+                    <span className="font-normal">Check out my recent</span> <span className="font-bold">Showreel</span>
+                  </span>
                   <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:text-2xl">
                     Click Play <span className="winking-emoji"></span>
                   </span>
