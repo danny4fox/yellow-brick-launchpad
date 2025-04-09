@@ -36,7 +36,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-white/90 ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
       >
         {children}
       </a>
@@ -49,7 +49,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-white/90 ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
       >
         {children}
       </a>
@@ -62,7 +62,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-white/90 ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
       >
         {children}
       </a>
@@ -75,13 +75,13 @@ const ActionButton: React.FC<ActionButtonProps> = ({
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-block font-bold transition-all duration-300 ${
-        textOnly ? 'text-white hover:text-neon px-3 py-1.5 border-b-2 border-neon hover:border-neon rounded-none' : 'px-6 py-2.5 rounded-full'
+        textOnly ? 'text-white hover:text-neon px-3 py-1.5 border-b-2 border-neon/50 hover:border-neon rounded-none' : 'px-6 py-2.5 rounded-full'
       } ${
         textOnly
           ? ''
           : inverse 
-              ? 'bg-transparent border-2 border-neon text-neon hover:bg-neon/10' 
-              : 'bg-white text-darknavy border-2 border-neon hover:brightness-110'
+              ? 'bg-transparent border-2 border-neon/50 text-neon hover:bg-neon/10 shadow-[0_0_15px_rgba(235,255,0,0.3)]' 
+              : 'bg-white text-darknavy border-2 border-neon/50 hover:brightness-110 shadow-[0_0_15px_rgba(235,255,0,0.3)]'
       } ${className}`}
     >
       {children}
