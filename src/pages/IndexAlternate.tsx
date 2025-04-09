@@ -204,7 +204,7 @@ const IndexAlternate = () => {
         </section>
 
         {/* CTA Section - Enhanced with neon accents and glow */}
-        <section id="contact" className="py-24 bg-darknavy relative overflow-hidden">
+        <section id="contact" className="py-24 bg-white relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
@@ -216,7 +216,7 @@ const IndexAlternate = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
+                <ActionButton href={linkedInUrl} darkHighlighted={true}>
                   Connect on LinkedIn
                 </ActionButton>
                 <ActionButton href={calendarUrl} highlighted={true}>

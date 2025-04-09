@@ -13,6 +13,7 @@ interface ActionButtonProps {
   textOnly?: boolean;
   boxed?: boolean;
   highlighted?: boolean;
+  darkHighlighted?: boolean;
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({ 
@@ -26,8 +27,22 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   glow = false,
   textOnly = false,
   boxed = false,
-  highlighted = false
+  highlighted = false,
+  darkHighlighted = false
 }) => {
+  if (darkHighlighted) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-block font-medium text-neon bg-darknavy py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-darknavy/90 ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
+
   if (highlighted) {
     return (
       <a

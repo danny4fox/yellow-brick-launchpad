@@ -213,12 +213,12 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Enhanced glass effect with neon accents */}
-        <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-darknavy to-black">
+        {/* CTA Section - Swapped light/dark elements */}
+        <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-white to-gray-100">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
+            <div className="max-w-3xl mx-auto bg-darknavy backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-neon">Ready to Elevate Your Brand?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
@@ -226,7 +226,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
+                <ActionButton href={linkedInUrl} darkHighlighted={true}>
                   Connect on LinkedIn
                 </ActionButton>
                 <ActionButton href={calendarUrl} highlighted={true}>
