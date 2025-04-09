@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -118,4 +119,32 @@ html {
 .gradient-text-hover:hover .glow {
   opacity: 0.8;
   transform: scale(1.1);
+}
+
+.gradient-text-hover .text {
+  position: relative;
+  z-index: 10;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.gradient-text-hover:hover .text {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #0E0B1D, #6C51F5, #F42AA6, #EBFF00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
