@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -20,8 +19,8 @@ const Index = () => {
   
   // Motion Graphics text with individual character spans
   const motionGraphicsText = "Motion Graphics".split('').map((char, index) => (
-    <span key={index} className="text" style={{ animationDelay: `${index * 0.05}s` }}>
-      {char}
+    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+      {char === ' ' ? '\u00A0' : char}
     </span>
   ));
   
@@ -64,7 +63,9 @@ const Index = () => {
               </strong> Brands to Life</div>
               <div className="block">with <span className="gradient-text-hover font-bold italic relative">
                 <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
-                <span className="inline-flex">{motionGraphicsText}</span>
+                <span className="text-container inline-flex">
+                  {motionGraphicsText}
+                </span>
               </span></div>
             </h1>
             
