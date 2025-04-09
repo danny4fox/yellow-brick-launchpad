@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -139,25 +138,65 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center transition-all duration-300">
-                <span className="bg-black rounded-full p-2 mr-2 animate-continuous-down-bg" style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
-                  <ArrowDown 
-                    size={31} 
-                    strokeWidth={2}
-                    className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110 text-white" 
-                    style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
-                  />
+                {/* First set of circles - Left side */}
+                <span className="relative">
+                  {/* First circle - Black */}
+                  <span className="bg-black rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Second circle - Pink */}
+                  <span className="bg-[#F42AA6] rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.30s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Third circle - Yellow */}
+                  <span className="bg-[#EBFF00] rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.45s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Arrow inside the circles */}
+                  <span className="bg-black rounded-full p-2 mr-2 relative">
+                    <ArrowDown 
+                      size={31} 
+                      strokeWidth={2}
+                      className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110 text-white" 
+                      style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                    />
+                  </span>
                 </span>
+                
                 <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
                   <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
                   <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:text-2xl">Click Play :)</span>
                 </span>
-                <span className="bg-black rounded-full p-2 ml-2 animate-continuous-down-bg" style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
-                  <ArrowDown 
-                    size={31} 
-                    strokeWidth={2}
-                    className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110 text-white" 
-                    style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
-                  />
+                
+                {/* Second set of circles - Right side */}
+                <span className="relative">
+                  {/* First circle - Black */}
+                  <span className="bg-black rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Second circle - Pink */}
+                  <span className="bg-[#F42AA6] rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.30s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Third circle - Yellow */}
+                  <span className="bg-[#EBFF00] rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                        style={{ animationDelay: '0.45s', animationName: 'shared-arrow-bg-motion' }}>
+                  </span>
+                  
+                  {/* Arrow inside the circles */}
+                  <span className="bg-black rounded-full p-2 ml-2 relative">
+                    <ArrowDown 
+                      size={31} 
+                      strokeWidth={2}
+                      className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110 text-white" 
+                      style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                    />
+                  </span>
                 </span>
               </p>
             </div>
