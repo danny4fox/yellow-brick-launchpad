@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -24,6 +25,17 @@ const Index = () => {
     </span>
   ));
   
+  // Smooth scroll handler for anchor links
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  };
+  
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -41,9 +53,13 @@ const Index = () => {
               </a>
               
               <div className="flex items-center gap-6">
-                <Link to="/alternate" className="text-white/80 hover:text-white transition-colors">
+                <a 
+                  href="#work" 
+                  className="text-white/80 hover:text-white transition-colors"
+                  onClick={scrollToSection('work')}
+                >
                   Services
-                </Link>
+                </a>
                 <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true}>
                   Free Consultation
                 </ActionButton>
@@ -123,7 +139,7 @@ const Index = () => {
         </section>
 
         {/* Video Showcase Section - Enhanced gradient background */}
-        <section className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden">
+        <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-2/3 bg-neon/10 blur-3xl rounded-full opacity-40"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
