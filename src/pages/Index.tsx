@@ -205,9 +205,9 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
-                  <p className="text-base text-darknavy font-medium mt-4">
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                  <h3 className="font-bold text-xl mb-3 text-darknavy bg-gray-100 px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
+                  <p className="text-base text-black/90 font-medium mt-4">
                     Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                   </p>
                 </div>
@@ -215,9 +215,9 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
-                  <p className="text-base text-darknavy font-medium mt-4">
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                  <h3 className="font-bold text-xl mb-3 text-darknavy bg-gray-100 px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
+                  <p className="text-base text-black/90 font-medium mt-4">
                     Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                   </p>
                 </div>
@@ -225,9 +225,9 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
-                  <p className="text-base text-darknavy font-medium mt-4">
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                  <h3 className="font-bold text-xl mb-3 text-darknavy bg-gray-100 px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
+                  <p className="text-base text-black/90 font-medium mt-4">
                     Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                   </p>
                 </div>
@@ -235,9 +235,9 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
-                  <p className="text-base text-darknavy font-medium mt-4">
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                  <h3 className="font-bold text-xl mb-3 text-darknavy bg-gray-100 px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
+                  <p className="text-base text-black/90 font-medium mt-4">
                     Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                   </p>
                 </div>
