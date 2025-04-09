@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -28,7 +29,7 @@ const Index = () => {
         {/* Navigation */}
         <div className="container mx-auto px-6 py-6 relative z-10">
           <nav>
-            <div className="flex items-center justify-between px-8 py-4 rounded-2xl">
+            <div className="flex items-center justify-between px-8 py-4">
               <a href="/" className="text-xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
@@ -115,41 +116,54 @@ const Index = () => {
           </div>
         </section>
 
-        {/* What Am I Doing Section - Clean white background with improved contrast */}
+        {/* What Am I Doing Section - Enhanced contrast light background */}
         <section id="services" className="py-24 bg-white text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-darknavy">What Am I Doing?</h2>
-              <p className="text-sm md:text-base max-w-3xl mx-auto text-darknavy/90">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-darknavy">
+                <span className="relative inline-block">
+                  <span className="absolute -inset-1 bg-neon/20 blur-sm rounded-lg"></span>
+                  <span className="relative">What Am I Doing?</span>
+                </span>
+              </h2>
+              <p className="text-base md:text-lg max-w-3xl mx-auto text-darknavy font-medium">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-darknavy">Explainer Videos</h3>
-                <p className="text-sm text-darknavy/90">
-                  Break down complex products & services into clear, engaging narratives that your audience can easily understand.
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="p-10 rounded-3xl bg-gradient-to-br from-white to-gray-100 border-2 border-neon shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgba(235,255,0,0.2)] transition-all hover:translate-y-[-5px]">
+                <div className="flex flex-col h-full">
+                  <h3 className="font-bold text-xl mb-4 text-darknavy bg-neon/20 inline-block px-4 py-2 rounded-lg self-start">Explainer Videos</h3>
+                  <p className="text-base text-darknavy">
+                    Break down complex products & services into clear, engaging narratives that your audience can easily understand.
+                  </p>
+                </div>
               </div>
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-darknavy">UI & Product Demos</h3>
-                <p className="text-sm text-darknavy/90">
-                  Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
-                </p>
+              <div className="p-10 rounded-3xl bg-gradient-to-br from-white to-gray-100 border-2 border-neon shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgba(235,255,0,0.2)] transition-all hover:translate-y-[-5px]">
+                <div className="flex flex-col h-full">
+                  <h3 className="font-bold text-xl mb-4 text-darknavy bg-neon/20 inline-block px-4 py-2 rounded-lg self-start">UI & Product Demos</h3>
+                  <p className="text-base text-darknavy">
+                    Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
+                  </p>
+                </div>
               </div>
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-darknavy">Support & Help Center Videos</h3>
-                <p className="text-sm text-darknavy/90">
-                  Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
-                </p>
+              <div className="p-10 rounded-3xl bg-gradient-to-br from-white to-gray-100 border-2 border-neon shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgba(235,255,0,0.2)] transition-all hover:translate-y-[-5px]">
+                <div className="flex flex-col h-full">
+                  <h3 className="font-bold text-xl mb-4 text-darknavy bg-neon/20 inline-block px-4 py-2 rounded-lg self-start">Support & Help Center Videos</h3>
+                  <p className="text-base text-darknavy">
+                    Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
+                  </p>
+                </div>
               </div>
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-darknavy">Marketing & Social Motion Graphics</h3>
-                <p className="text-sm text-darknavy/90">
-                  Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
-                </p>
+              <div className="p-10 rounded-3xl bg-gradient-to-br from-white to-gray-100 border-2 border-neon shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgba(235,255,0,0.2)] transition-all hover:translate-y-[-5px]">
+                <div className="flex flex-col h-full">
+                  <h3 className="font-bold text-xl mb-4 text-darknavy bg-neon/20 inline-block px-4 py-2 rounded-lg self-start">Marketing & Social Motion Graphics</h3>
+                  <p className="text-base text-darknavy">
+                    Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
