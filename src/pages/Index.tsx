@@ -148,7 +148,7 @@ const Index = () => {
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center transition-all duration-300">
-                <span className="bg-black rounded-full p-2 mr-2">
+                <span className="bg-black rounded-full p-2 mr-2 animate-continuous-down-bg" style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
                   <ArrowDown 
                     size={31} 
                     strokeWidth={2}
@@ -160,7 +160,7 @@ const Index = () => {
                   <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
                   <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:text-2xl">Click Play :)</span>
                 </span>
-                <span className="bg-black rounded-full p-2 ml-2">
+                <span className="bg-black rounded-full p-2 ml-2 animate-continuous-down-bg" style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
                   <ArrowDown 
                     size={31} 
                     strokeWidth={2}
