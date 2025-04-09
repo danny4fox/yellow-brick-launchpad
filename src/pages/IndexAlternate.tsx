@@ -49,13 +49,11 @@ const IndexAlternate = () => {
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <div className="space-y-6 max-w-4xl">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                <div>Bringing SaaS, IoT Brands to Life</div>
-                <div>with Motion Graphics</div>
-                <div className="text-neon">Guidance that flows, brand that sticks</div>
-              </h1>
-            </div>
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+              <div className="block">Bringing SaaS, IoT Brands to Life</div>
+              <div className="block">with Motion Graphics</div>
+              <div className="block text-neon">Guidance that flows, brand that sticks</div>
+            </h1>
           </div>
         </div>
       </header>
