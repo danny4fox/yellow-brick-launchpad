@@ -56,7 +56,7 @@ const Index = () => {
                 <span className="relative z-10">IoT</span>
               </strong> Brands to Life</div>
               <div className="block">with <span className="font-bold text-neon italic relative">
-                <span className="absolute -inset-2 bg-neon/20 blur-md rounded-full z-0"></span>
+                <span className="absolute -inset-2 bg-neon/20 animate-pulse blur-md rounded-full z-0"></span>
                 <span className="relative z-10">Motion Graphics</span>
               </span></div>
             </h1>
