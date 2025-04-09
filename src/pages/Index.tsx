@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -20,7 +19,7 @@ const Index = () => {
   
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
-      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden h-screen">
+      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
@@ -48,7 +47,7 @@ const Index = () => {
         
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center px-0 h-full">
+          <div className="flex flex-col items-center justify-center text-center px-0">
             <div className="space-y-6 max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mx-0 my-0">
                 <div>Bringing SaaS, IoT Brands<br className="hidden sm:block" />

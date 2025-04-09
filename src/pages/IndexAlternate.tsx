@@ -21,7 +21,7 @@ const IndexAlternate = () => {
   return (
     <div className="min-h-screen bg-white text-darknavy font-sans">
       {/* Hero Section */}
-      <header className="relative bg-darknavy text-white overflow-hidden h-screen">
+      <header className="relative bg-darknavy text-white overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
@@ -49,7 +49,7 @@ const IndexAlternate = () => {
         
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center h-full">
+          <div className="flex flex-col items-center justify-center text-center">
             <div className="space-y-6 max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
                 <div>Bringing SaaS, IoT Brands<br className="hidden sm:block" />
