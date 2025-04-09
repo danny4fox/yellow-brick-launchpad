@@ -22,13 +22,17 @@ const VideoEmbed: React.FC<VideoEmbedProps> = ({
   return (
     <div className={`${isBackground ? 'absolute inset-0 w-full h-full' : ''}`}>
       {isBackground ? (
-        <iframe
-          className="w-full h-full border-0 object-cover pointer-events-none scale-[1.5]"
-          src={`https://www.youtube.com/embed/${youtubeId}${videoParams}`}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <div className="relative w-full h-full">
+          <iframe
+            className="w-full h-full border-0 object-cover pointer-events-none scale-[1.5]"
+            src={`https://www.youtube.com/embed/${youtubeId}${videoParams}`}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          {/* Gradient overlays for fading the edges */}
+          <div className="absolute inset-0 bg-gradient-to-r from-darknavy via-transparent to-darknavy pointer-events-none"></div>
+        </div>
       ) : (
         <AspectRatio ratio={16 / 9} className={`overflow-hidden ${isHero ? 'h-full' : ''}`}>
           <iframe
