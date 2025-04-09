@@ -7,6 +7,7 @@ interface ActionButtonProps {
   className?: string;
   inverse?: boolean;
   gradient?: boolean;
+  animated?: boolean;
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({ 
@@ -14,7 +15,8 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   href, 
   className, 
   inverse = false, 
-  gradient = false 
+  gradient = false,
+  animated = false 
 }) => {
   return (
     <a
@@ -23,11 +25,11 @@ const ActionButton: React.FC<ActionButtonProps> = ({
       rel="noopener noreferrer"
       className={`inline-block font-medium px-8 py-3 text-base rounded-full transition-all duration-300 ${
         gradient
-          ? 'bg-gradient-to-r from-darknavy via-purple to-pink text-white hover:shadow-[0_8px_16px_rgba(108,81,245,0.4)]'
+          ? 'bg-gradient-to-r from-darknavy via-pink to-pink text-white hover:shadow-[0_8px_16px_rgba(244,42,166,0.4)]'
           : inverse 
             ? 'bg-transparent border-2 border-neon text-neon hover:bg-neon/10' 
             : 'bg-neon text-darknavy hover:shadow-[0_8px_16px_rgba(235,255,0,0.25)]'
-      } ${className}`}
+      } ${animated ? 'animate-gentle-float' : ''} ${className}`}
     >
       {children}
     </a>
