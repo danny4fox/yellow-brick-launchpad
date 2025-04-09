@@ -136,6 +136,18 @@ html {
   z-index: 1;
 }
 
+.blueprint-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(235, 255, 0, 0.05) 0%, rgba(108, 81, 245, 0.08) 50%, rgba(244, 42, 166, 0.05) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 @keyframes continuous-down {
   0% {
     transform: translateY(-10px);
