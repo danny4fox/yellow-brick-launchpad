@@ -45,7 +45,7 @@ const IndexAlternate = () => {
                 <Link to="/" className="text-white/80 hover:text-white transition-colors">
                   Original Version
                 </Link>
-                <ActionButton href={calendarUrl} highlighted={true}>
+                <ActionButton href={calendarUrl} boxed={true}>
                   Free Consultation
                 </ActionButton>
               </div>
@@ -203,7 +203,7 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section - Enhanced with neon accents and glow */}
+        {/* CTA Section */}
         <section id="contact" className="py-24 bg-white relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
           

@@ -59,7 +59,7 @@ const Index = () => {
                 >
                   Services
                 </a>
-                <ActionButton href={calendarUrl} highlighted={true}>
+                <ActionButton href={calendarUrl} boxed={true}>
                   Free Consultation
                 </ActionButton>
               </div>
