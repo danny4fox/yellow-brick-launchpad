@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -130,7 +129,7 @@ const IndexAlternate = () => {
         </section>
 
         {/* Video Showcase Section with enhanced contrast */}
-        <section className="py-24 bg-gradient-to-tr from-gray-100 to-white relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-tr from-gray-100 to-white relative overflow-hidden group">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-white/20 blur-3xl rounded-full opacity-30"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-10">
@@ -139,9 +138,9 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center">
-                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold" />
+                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
                 Check out my recent <span className="mx-2 font-bold">showreel</span>
-                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold" />
+                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">

@@ -140,7 +140,7 @@ const Index = () => {
         </section>
 
         {/* Video Showcase Section - Enhanced gradient background */}
-        <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden">
+        <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden group">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-2/3 bg-white/10 blur-3xl rounded-full opacity-40"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
@@ -148,9 +148,9 @@ const Index = () => {
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center">
-                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold" />
+                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
                 Check out my recent <span className="mx-2 font-bold">showreel</span>
-                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold" />
+                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)] bg-white/5 backdrop-blur-sm p-1">
