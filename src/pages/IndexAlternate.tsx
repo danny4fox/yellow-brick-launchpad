@@ -111,8 +111,10 @@ const IndexAlternate = () => {
               <div className="md:w-2/3">
                 <h2 className="text-2xl md:text-4xl font-bold mb-8 relative inline-block">
                   <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
-                  <span className="relative z-10 text-white px-6 py-2 text-container inline-flex">
-                    {whoAmIText}
+                  <span className="relative z-10 text-white px-6 py-2 gradient-text-hover">
+                    <span className="text-container inline-flex">
+                      {whoAmIText}
+                    </span>
                   </span>
                 </h2>
                 <div className="space-y-4 text-sm md:text-base text-darknavy">
@@ -200,8 +202,10 @@ const IndexAlternate = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
                 <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
-                <span className="relative z-10 text-white px-6 py-2 text-container inline-flex">
-                  {whatAmIDoingText}
+                <span className="relative z-10 text-white px-6 py-2 gradient-text-hover">
+                  <span className="text-container inline-flex">
+                    {whatAmIDoingText}
+                  </span>
                 </span>
               </h2>
               <p className="text-sm md:text-lg max-w-2xl mx-auto text-darknavy font-medium mt-6">
