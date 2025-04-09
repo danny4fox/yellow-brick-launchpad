@@ -47,45 +47,58 @@ const IndexAlternate = () => {
           </nav>
         </div>
         
-        {/* Hero Content with improved spacing */}
+        {/* Hero Content with improved spacing and glow effects */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-5xl md:text-6xl font-normal leading-tight tracking-tight">
-              <div className="block">Bringing <strong>SaaS</strong>, <strong>IoT</strong> Brands to Life</div>
-              <div className="block">with <span className="font-bold text-neon italic">Motion Graphics</span></div>
+            <h1 className="text-5xl md:text-7xl font-normal leading-tight tracking-tight">
+              <div className="block mb-2">Bringing <strong className="relative">
+                <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0"></span>
+                <span className="relative z-10">SaaS</span>
+              </strong>, <strong className="relative">
+                <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0"></span>
+                <span className="relative z-10">IoT</span>
+              </strong> Brands to Life</div>
+              <div className="block">with <span className="font-bold text-neon italic relative">
+                <span className="absolute -inset-2 bg-neon/20 blur-md rounded-full z-0"></span>
+                <span className="relative z-10">Motion Graphics</span>
+              </span></div>
             </h1>
             
-            <div className="mt-8 text-3xl md:text-4xl font-bold">
-              Guidance that flows, brand that sticks
+            <div className="mt-12 text-3xl md:text-4xl font-bold relative">
+              <span className="absolute -inset-2 bg-white/5 blur-lg rounded-full z-0"></span>
+              <span className="relative z-10">Guidance that flows, brand that sticks</span>
             </div>
           </div>
         </div>
       </header>
 
       <main>
-        {/* Who Am I Section - Clean design */}
-        <section id="about" className="py-24 bg-white">
+        {/* Who Am I Section - Enhanced with glow effects and contrast */}
+        <section id="about" className="py-24 bg-gradient-to-br from-white to-gray-50">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
                 <div className="relative">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-neon/30 to-neon/10 blur-lg rounded-2xl"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-neon/40 via-neon/10 to-neon/20 blur-xl rounded-2xl"></div>
                   <img 
                     src="/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
                     alt="Daniel Bodnar" 
-                    className="relative rounded-2xl w-full max-w-xs mx-auto shadow-xl border-2 border-gray-100"
+                    className="relative rounded-2xl w-full max-w-xs mx-auto shadow-2xl border-2 border-gray-100 z-10"
                   />
                 </div>
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-2xl md:text-3xl font-bold mb-8">Who Am I?</h2>
-                <div className="space-y-4 text-sm md:text-base text-darknavy/80">
-                  <p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-8 relative inline-block">
+                  <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
+                  <span className="relative z-10 text-white px-6 py-2">Who Am I?</span>
+                </h2>
+                <div className="space-y-4 text-sm md:text-base text-darknavy">
+                  <p className="font-medium">
                     Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
                     I've worked with 500+ small and mid-sized businesses across Hungary as a Regional Digital Marketing Consultant at Google, 
                     diving deep into marketing strategies and spotting one common theme:
                   </p>
-                  <p className="text-base font-medium text-darknavy border-l-4 border-neon pl-4 py-2">
+                  <p className="text-lg font-bold text-darknavy bg-neon/30 p-4 rounded-lg shadow-inner border-l-4 border-neon">
                     Video content was full of untapped potential.
                   </p>
                   <p>
@@ -99,7 +112,7 @@ const IndexAlternate = () => {
                     I'm all about delivering the highest amount of meaning in the least amount of time—no fluff, just crystal-clear communication. 
                     And what better way to do that than with motion design?
                   </p>
-                  <p className="italic font-medium">
+                  <p className="italic font-medium text-lg border-b-2 border-neon/50 pb-2 inline-block">
                     We live in a world that's moving fast. Understanding it shouldn't slow us down.
                   </p>
                 </div>
@@ -108,70 +121,74 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* Video Showcase Section */}
-        <section className="py-24 bg-gray-50 relative overflow-hidden">
-          <div className="container mx-auto px-6">
+        {/* Video Showcase Section with enhanced contrast */}
+        <section className="py-24 bg-gradient-to-tr from-gray-100 to-white relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-neon/5 blur-3xl rounded-full opacity-30"></div>
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-10">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">My Work</h2>
-              <p className="text-sm md:text-base max-w-3xl mx-auto text-darknavy/70">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+                <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
+                <span className="relative z-10 text-white px-6 py-2">My Work</span>
+              </h2>
+              <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium">
                 Check out this example of my motion design work
               </p>
             </div>
-            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">
               <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
             </div>
           </div>
         </section>
 
-        {/* What Am I Doing Section - Enhanced contrast */}
-        <section id="services" className="py-24 bg-gray-50 text-darknavy relative">
+        {/* What Am I Doing Section - Enhanced contrast light theme */}
+        <section id="services" className="py-24 bg-gradient-to-br from-gray-50 to-white text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-16">
-              <div className="inline-block bg-gradient-to-r from-darknavy to-darknavy/90 rounded-xl p-2 mb-8 shadow-lg">
-                <h2 className="text-3xl md:text-4xl font-bold text-neon px-8 py-2">What Am I Doing?</h2>
+              <div className="inline-block bg-gradient-to-r from-darknavy to-darknavy/90 rounded-xl p-2 mb-8 shadow-lg transform -rotate-1">
+                <h2 className="text-3xl md:text-5xl font-bold text-neon px-8 py-2">What Am I Doing?</h2>
               </div>
-              <p className="text-base md:text-lg max-w-3xl mx-auto text-darknavy font-medium">
+              <p className="text-base md:text-xl max-w-3xl mx-auto text-darknavy font-semibold">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-50 group-hover:opacity-80 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div className="group relative transform transition-transform duration-300 hover:-translate-y-2">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
-                  <p className="text-base text-darknavy mt-4">
+                  <p className="text-base text-darknavy font-medium mt-4">
                     Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                   </p>
                 </div>
               </div>
               
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-50 group-hover:opacity-80 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div className="group relative transform transition-transform duration-300 hover:-translate-y-2">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
-                  <p className="text-base text-darknavy mt-4">
+                  <p className="text-base text-darknavy font-medium mt-4">
                     Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                   </p>
                 </div>
               </div>
               
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-50 group-hover:opacity-80 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div className="group relative transform transition-transform duration-300 hover:-translate-y-2">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
-                  <p className="text-base text-darknavy mt-4">
+                  <p className="text-base text-darknavy font-medium mt-4">
                     Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                   </p>
                 </div>
               </div>
               
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-50 group-hover:opacity-80 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-white rounded-3xl shadow-xl h-full">
+              <div className="group relative transform transition-transform duration-300 hover:-translate-y-2">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
+                <div className="relative p-8 bg-white rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
-                  <p className="text-base text-darknavy mt-4">
+                  <p className="text-base text-darknavy font-medium mt-4">
                     Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                   </p>
                 </div>
@@ -180,21 +197,23 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section - Refined and professional */}
-        <section id="contact" className="py-24 bg-white relative overflow-hidden">
+        {/* CTA Section - Enhanced with neon accents and glow */}
+        <section id="contact" className="py-24 bg-darknavy relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
+          
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto bg-darknavy/95 backdrop-blur-lg rounded-3xl border border-white/10 shadow-2xl p-10">
+            <div className="max-w-3xl mx-auto bg-darknavy/95 backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
               <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Ready to Elevate Your Brand?</h2>
-                <p className="text-sm md:text-base text-white/90 max-w-2xl mx-auto">
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-neon">Ready to Elevate Your Brand?</h2>
+                <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
                   Let's connect for a free consultation and explore how motion design can elevate your marketing.
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="border-white/20">
+                <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} className="bg-neon hover:bg-neon/90 text-darknavy font-bold">
+                <ActionButton href={calendarUrl} className="bg-neon hover:bg-neon/90 text-darknavy font-bold shadow-[0_0_20px_rgba(235,255,0,0.3)]">
                   Schedule a Meeting
                 </ActionButton>
               </div>
