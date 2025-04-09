@@ -147,7 +147,7 @@ const Index = () => {
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6">
-                Check out this example of my motion design work
+                Check out my recent showreel
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(235,255,0,0.15)] bg-white/5 backdrop-blur-sm p-1">

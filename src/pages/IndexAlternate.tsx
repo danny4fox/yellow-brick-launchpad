@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -138,7 +137,7 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium">
-                Check out this example of my motion design work
+                Check out my recent showreel
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">
