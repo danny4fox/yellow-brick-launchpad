@@ -149,8 +149,8 @@ const Index = () => {
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center transition-all duration-300">
                 <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
-                <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115">
-                  Check out my recent <span className="mx-1">showreel</span>
+                <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
+                  Check out my recent <span className="mx-1">Showreel</span>
                 </span>
                 <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
               </p>
