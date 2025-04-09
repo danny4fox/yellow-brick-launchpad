@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -48,10 +49,10 @@ const Index = () => {
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center px-0">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight mx-0 my-0">
+            <h1 className="text-4xl md:text-5xl font-normal leading-tight tracking-tight mx-0 my-0">
               <div className="block">Bringing SaaS, IoT Brands to Life</div>
               <div className="block">with Motion Graphics</div>
-              <div className="block text-neon">Guidance that flows, brand that sticks</div>
+              <div className="block text-3xl md:text-4xl font-bold">Guidance that flows, brand that sticks</div>
             </h1>
           </div>
         </div>
