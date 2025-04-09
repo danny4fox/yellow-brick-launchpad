@@ -1,22 +1,18 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com";
-  
+
   // Replace with your actual calendar booking URL
   const calendarUrl = "https://calendly.com";
-  
+
   // YouTube video ID from the URL
   const youtubeVideoId = "CLaTNJ2Nh9k";
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
+  return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90">
         {/* Navigation */}
@@ -41,9 +37,9 @@ const Index = () => {
         
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32">
-          <div className="flex flex-col items-center justify-center text-center">
+          <div className="flex flex-col items-center justify-center text-center px-0">
             <div className="space-y-6 max-w-4xl">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mx-0 my-0">
                 Bringing SaaS, IoT Brands to Life <br className="hidden md:block" />
                 <span className="text-neon">with Motion Graphics</span>
               </h1>
@@ -61,11 +57,7 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
-                <img 
-                  src="/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" 
-                  alt="Daniel Bodnar" 
-                  className="rounded-2xl w-full max-w-xs mx-auto shadow-2xl border-2 border-gray-100"
-                />
+                <img src="/lovable-uploads/719edf1a-d56a-4774-9d0c-09af34b91723.png" alt="Daniel Bodnar" className="rounded-2xl w-full max-w-xs mx-auto shadow-2xl border-2 border-gray-100" />
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Am I?</h2>
@@ -188,8 +180,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
