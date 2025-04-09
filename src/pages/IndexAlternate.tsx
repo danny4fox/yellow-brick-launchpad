@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -173,7 +172,7 @@ const IndexAlternate = () => {
                 </span>
               </p>
             </div>
-            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">
+            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/30">
               <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
             </div>
           </div>
@@ -187,7 +186,7 @@ const IndexAlternate = () => {
                 <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
                 <span className="relative z-10 text-white px-6 py-2">What Am I Doing?</span>
               </h2>
-              <p className="text-base md:text-xl max-w-3xl mx-auto text-darknavy font-semibold">
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto text-darknavy font-bold mt-6">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
