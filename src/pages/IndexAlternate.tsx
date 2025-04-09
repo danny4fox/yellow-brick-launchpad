@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -30,7 +31,7 @@ const IndexAlternate = () => {
         <div className="container mx-auto px-6 py-6 relative z-10">
           <nav>
             <div className="flex items-center justify-between px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/10 shadow-lg">
-              <a href="/" className="text-2xl font-bold tracking-tight">
+              <a href="/" className="text-xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
@@ -49,7 +50,7 @@ const IndexAlternate = () => {
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
               <div className="block">Bringing SaaS, IoT Brands to Life</div>
               <div className="block">with Motion Graphics</div>
               <div className="block text-neon">Guidance that flows, brand that sticks</div>
@@ -74,14 +75,14 @@ const IndexAlternate = () => {
                 </div>
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Am I?</h2>
-                <div className="space-y-4 text-base text-darknavy/80">
+                <h2 className="text-2xl md:text-3xl font-bold mb-8">Who Am I?</h2>
+                <div className="space-y-4 text-sm md:text-base text-darknavy/80">
                   <p>
                     Hi, I'm Daniel Bodnar — a Motion Graphic Designer with 8 years of experience in content production and marketing. 
                     I've worked with 500+ small and mid-sized businesses across Hungary as a Regional Digital Marketing Consultant at Google, 
                     diving deep into marketing strategies and spotting one common theme:
                   </p>
-                  <p className="text-lg font-medium text-darknavy border-l-4 border-neon pl-4 py-2">
+                  <p className="text-base font-medium text-darknavy border-l-4 border-neon pl-4 py-2">
                     Video content was full of untapped potential.
                   </p>
                   <p>
@@ -107,9 +108,9 @@ const IndexAlternate = () => {
         {/* Video Showcase Section */}
         <section className="py-24 bg-gray-50 relative overflow-hidden">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-darknavy">My Work</h2>
-              <p className="text-base md:text-lg max-w-3xl mx-auto text-darknavy/70">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">My Work</h2>
+              <p className="text-sm md:text-base max-w-3xl mx-auto text-darknavy/70">
                 Check out this example of my motion design work
               </p>
             </div>
@@ -122,9 +123,9 @@ const IndexAlternate = () => {
         {/* What Am I Doing Section */}
         <section id="services" className="py-24 bg-darknavy text-white relative">
           <div className="container mx-auto px-6 relative z-20">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">What Am I Doing?</h2>
-              <p className="text-base md:text-lg max-w-3xl mx-auto text-white/80">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">What Am I Doing?</h2>
+              <p className="text-sm md:text-base max-w-3xl mx-auto text-white/80">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
@@ -132,26 +133,26 @@ const IndexAlternate = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-xl mb-4 text-neon">Explainer Videos</h3>
-                <p className="text-base text-white/80">
+                <h3 className="font-bold text-lg mb-3 text-neon">Explainer Videos</h3>
+                <p className="text-sm text-white/80">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-xl mb-4 text-neon">UI & Product Demos</h3>
-                <p className="text-base text-white/80">
+                <h3 className="font-bold text-lg mb-3 text-neon">UI & Product Demos</h3>
+                <p className="text-sm text-white/80">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-xl mb-4 text-neon">Support & Help Center Videos</h3>
-                <p className="text-base text-white/80">
+                <h3 className="font-bold text-lg mb-3 text-neon">Support & Help Center Videos</h3>
+                <p className="text-sm text-white/80">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-xl mb-4 text-neon">Marketing & Social Motion Graphics</h3>
-                <p className="text-base text-white/80">
+                <h3 className="font-bold text-lg mb-3 text-neon">Marketing & Social Motion Graphics</h3>
+                <p className="text-sm text-white/80">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
               </div>
@@ -160,12 +161,12 @@ const IndexAlternate = () => {
         </section>
 
         {/* CTA Section - Refined and professional */}
-        <section id="contact" className="py-28 bg-white relative overflow-hidden">
+        <section id="contact" className="py-24 bg-white relative overflow-hidden">
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto bg-darknavy/95 backdrop-blur-lg rounded-3xl border border-white/10 shadow-2xl p-12 text-white">
-              <div className="text-center mb-10">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Brand?</h2>
-                <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            <div className="max-w-3xl mx-auto bg-darknavy/95 backdrop-blur-lg rounded-3xl border border-white/10 shadow-2xl p-10">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Elevate Your Brand?</h2>
+                <p className="text-sm md:text-base text-white/90 max-w-2xl mx-auto">
                   Let's connect for a free consultation and explore how motion design can elevate your marketing.
                 </p>
               </div>
@@ -183,10 +184,10 @@ const IndexAlternate = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-darknavy text-center py-10 text-white/60 text-sm">
+      <footer className="bg-darknavy text-center py-8 text-white/60 text-xs">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <p className="text-base font-light">© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
+          <div className="flex flex-col items-center justify-center space-y-3">
+            <p className="text-sm font-light">© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
             <p className="text-xs text-white/40">Bay Area · Copenhagen</p>
           </div>
         </div>
