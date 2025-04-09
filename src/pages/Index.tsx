@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -150,26 +151,26 @@ const Index = () => {
                 {/* First set of circles - Left side */}
                 <span className="relative">
                   {/* First circle - Black */}
-                  <span className="bg-black rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-black rounded-full w-10 h-10 inline-block mr-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Second circle - Pink */}
-                  <span className="bg-[#F42AA6] rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-[#F42AA6] rounded-full w-10 h-10 inline-block mr-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.30s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Third circle - Yellow */}
-                  <span className="bg-[#EBFF00] rounded-full p-2 mr-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-[#EBFF00] rounded-full w-10 h-10 inline-block mr-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.45s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Arrow inside the circles */}
-                  <span className="bg-black rounded-full p-2 mr-2 relative">
+                  <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center mr-2 relative">
                     <ArrowDown 
-                      size={31} 
+                      size={24} 
                       strokeWidth={2}
-                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
                       style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
                     />
                   </span>
@@ -183,26 +184,26 @@ const Index = () => {
                 {/* Second set of circles - Right side */}
                 <span className="relative">
                   {/* First circle - Black */}
-                  <span className="bg-black rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-black rounded-full w-10 h-10 inline-block ml-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Second circle - Pink */}
-                  <span className="bg-[#F42AA6] rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-[#F42AA6] rounded-full w-10 h-10 inline-block ml-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.30s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Third circle - Yellow */}
-                  <span className="bg-[#EBFF00] rounded-full p-2 ml-2 animate-continuous-down-bg absolute inset-0" 
+                  <span className="bg-[#EBFF00] rounded-full w-10 h-10 inline-block ml-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.45s', animationName: 'shared-arrow-bg-motion' }}>
                   </span>
                   
                   {/* Arrow inside the circles */}
-                  <span className="bg-black rounded-full p-2 ml-2 relative">
+                  <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center ml-2 relative">
                     <ArrowDown 
-                      size={31} 
+                      size={24} 
                       strokeWidth={2}
-                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
                       style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
                     />
                   </span>
