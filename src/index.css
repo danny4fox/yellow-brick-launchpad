@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -103,6 +104,19 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes continuous-down {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-continuous-down {
+  animation: continuous-down 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes gentle-float {

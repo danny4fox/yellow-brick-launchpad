@@ -139,9 +139,9 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center">
-                <ArrowDown size={24} className="mr-2 animate-bounce font-bold [animation-duration:2s]" />
+                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold" />
                 Check out my recent <span className="mx-2 font-bold">showreel</span>
-                <ArrowDown size={24} className="ml-2 animate-bounce font-bold [animation-duration:2s]" />
+                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold" />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">

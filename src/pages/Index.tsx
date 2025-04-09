@@ -148,9 +148,9 @@ const Index = () => {
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center">
-                <ArrowDown size={24} className="mr-2 animate-bounce font-bold [animation-duration:2s]" />
+                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold" />
                 Check out my recent <span className="mx-2 font-bold">showreel</span>
-                <ArrowDown size={24} className="ml-2 animate-bounce font-bold [animation-duration:2s]" />
+                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold" />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)] bg-white/5 backdrop-blur-sm p-1">
