@@ -148,12 +148,22 @@ const Index = () => {
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center transition-all duration-300">
-                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" style={{ animationDelay: '0s' }} />
+                <ArrowDown 
+                  size={31} 
+                  strokeWidth={2}
+                  className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                  style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                />
                 <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
                   <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
                   <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100">Click Play</span>
                 </span>
-                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" style={{ animationDelay: '0s' }} />
+                <ArrowDown 
+                  size={31} 
+                  strokeWidth={2}
+                  className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                  style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)] bg-white/5 backdrop-blur-sm p-1">

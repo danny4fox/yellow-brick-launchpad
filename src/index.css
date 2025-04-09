@@ -115,6 +115,15 @@ html {
   }
 }
 
+@keyframes shared-arrow-motion {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 .animate-continuous-down {
   animation: continuous-down 1.5s ease-in-out infinite alternate;
 }

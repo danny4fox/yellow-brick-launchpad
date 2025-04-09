@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -139,12 +138,22 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center transition-all duration-300">
-                <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" style={{ animationDelay: '0s' }} />
+                <ArrowDown 
+                  size={31} 
+                  strokeWidth={2}
+                  className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                  style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                />
                 <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
                   <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
                   <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100">Click Play</span>
                 </span>
-                <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" style={{ animationDelay: '0s' }} />
+                <ArrowDown 
+                  size={31} 
+                  strokeWidth={2}
+                  className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 scale-110" 
+                  style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
+                />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">
