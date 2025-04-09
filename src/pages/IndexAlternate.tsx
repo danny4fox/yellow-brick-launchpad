@@ -45,7 +45,7 @@ const IndexAlternate = () => {
                 <Link to="/" className="text-white/80 hover:text-white transition-colors">
                   Original Version
                 </Link>
-                <ActionButton href={calendarUrl} className="shadow-xl">
+                <ActionButton href={calendarUrl} gradient={true} className="shadow-xl">
                   Free Consultation
                 </ActionButton>
               </div>
