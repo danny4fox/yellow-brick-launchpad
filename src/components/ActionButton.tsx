@@ -9,6 +9,7 @@ interface ActionButtonProps {
   gradient?: boolean;
   animated?: boolean;
   wave?: boolean;
+  glow?: boolean;
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({ 
@@ -18,7 +19,8 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   inverse = false, 
   gradient = false,
   animated = false,
-  wave = false 
+  wave = false,
+  glow = false
 }) => {
   // Convert children to individual character spans if wave animation is enabled
   const content = wave ? 
@@ -41,7 +43,18 @@ const ActionButton: React.FC<ActionButtonProps> = ({
             : 'bg-neon text-darknavy hover:shadow-[0_8px_16px_rgba(235,255,0,0.25)]'
       } ${animated ? 'animate-gentle-float' : ''} ${wave ? 'gradient-text-hover' : ''} ${className}`}
     >
-      {wave ? (
+      {glow ? (
+        <div className="relative">
+          <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
+          {wave ? (
+            <span className="text-container inline-flex relative z-10">
+              {content}
+            </span>
+          ) : (
+            <span className="relative z-10">{content}</span>
+          )}
+        </div>
+      ) : wave ? (
         <span className="text-container inline-flex">
           {content}
         </span>
