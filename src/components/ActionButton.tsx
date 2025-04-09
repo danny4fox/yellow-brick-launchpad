@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface ActionButtonProps {
@@ -49,7 +48,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-medium text-darknavy bg-neon py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/40 transition-all duration-300 hover:bg-neon/90 ${className}`}
+        className={`inline-block font-medium text-darknavy bg-neon py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/10 transition-all duration-300 hover:bg-neon/90 ${className}`}
       >
         {children}
       </a>
@@ -62,7 +61,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-medium text-darknavy bg-neon py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/40 transition-all duration-300 hover:bg-neon/90 ${className}`}
+        className={`inline-block font-medium text-darknavy bg-neon py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/10 transition-all duration-300 hover:bg-neon/90 ${className}`}
       >
         {children}
       </a>
