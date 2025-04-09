@@ -83,7 +83,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy ${className}`}
       >
         {children}
       </a>
@@ -101,7 +101,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         textOnly
           ? ''
           : inverse 
-              ? 'bg-transparent border-2 border-neon/50 text-neon hover:bg-neon/10 shadow-[0_0_15px_rgba(235,255,0,0.3)]' 
+              ? 'bg-transparent border-2 border-neon text-white hover:bg-neon/10 hover:text-neon' 
               : 'bg-white text-darknavy border-2 border-neon/50 hover:brightness-110 shadow-[0_0_15px_rgba(235,255,0,0.3)]'
       } ${className}`}
     >

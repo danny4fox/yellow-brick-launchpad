@@ -278,7 +278,7 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated to match header background */}
+        {/* CTA Section - Updated to match header background with styling changes */}
         <section id="contact" className="py-24 relative bg-darknavy text-white overflow-hidden">
           {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
@@ -286,18 +286,18 @@ const IndexAlternate = () => {
           </div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
+            <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.15)] p-10">
               <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Ready to Elevate Your Brand?</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
-                  Let's connect for a free consultation and explore how motion design can elevate your marketing.
+                  Let's just connect on LinkedIn or if you are ready to have a 30 minutes free consultation about your marketing efforts, just hit the Schedule a Meeting button. :)
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} darkHighlighted={true}>
+                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} highlighted={true}>
+                <ActionButton href={calendarUrl} boxed={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                   Schedule a Meeting
                 </ActionButton>
               </div>
