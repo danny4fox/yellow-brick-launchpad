@@ -138,43 +138,33 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center transition-all duration-300">
-                {/* Left side circle with arrow */}
+                {/* Circle with arrow */}
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 mr-2">
-                  {/* Black circle */}
-                  <span className="bg-black rounded-full w-10 h-10 inline-block animate-continuous-down-bg absolute inset-0" 
-                        style={{ animationDelay: '0.35s' }}>
-                  </span>
-                  
-                  {/* Arrow inside the circle */}
+                  {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
                     <ArrowDown 
-                      size={24} 
-                      strokeWidth={4}
+                      size={28} 
+                      strokeWidth={3}
                       className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
-                      style={{ animationDelay: '0s' }} 
                     />
                   </span>
                 </span>
                 
                 <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115 group-hover:text-xl">
                   <span className="transition-all duration-300 group-hover:opacity-0">Check out my recent Showreel</span>
-                  <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:text-2xl">Click Play :)</span>
+                  <span className="absolute left-1/2 transform -translate-x-1/2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:text-2xl">
+                    Click Play <span className="winking-emoji"></span>
+                  </span>
                 </span>
                 
-                {/* Right side circle with arrow */}
+                {/* Circle with arrow */}
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 ml-2">
-                  {/* Black circle */}
-                  <span className="bg-black rounded-full w-10 h-10 inline-block animate-continuous-down-bg absolute inset-0" 
-                        style={{ animationDelay: '0.35s' }}>
-                  </span>
-                  
-                  {/* Arrow inside the circle */}
+                  {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
                     <ArrowDown 
-                      size={24} 
-                      strokeWidth={4}
+                      size={28} 
+                      strokeWidth={3}
                       className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
-                      style={{ animationDelay: '0s' }} 
                     />
                   </span>
                 </span>

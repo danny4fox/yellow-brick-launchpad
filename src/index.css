@@ -133,11 +133,26 @@ html {
 }
 
 .animate-continuous-down {
-  animation: continuous-down 3.5s ease-in-out infinite alternate;
+  animation: continuous-down 5.8s ease-in-out infinite alternate;
 }
 
 .animate-continuous-down-bg {
-  animation: shared-arrow-bg-motion 3.5s ease-in-out infinite alternate;
+  animation: shared-arrow-bg-motion 5.8s ease-in-out infinite alternate;
+  animation-delay: 0.58s;
+}
+
+@keyframes wink {
+  0%, 45%, 100% {
+    content: ":)";
+  }
+  50%, 95% {
+    content: ";)";
+  }
+}
+
+.winking-emoji::after {
+  content: ":)";
+  animation: wink 3s infinite;
 }
 
 @keyframes gentle-float {
