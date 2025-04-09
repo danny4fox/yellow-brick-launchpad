@@ -105,6 +105,37 @@ html {
   scroll-behavior: smooth;
 }
 
+.blueprint-bg {
+  background-color: #F1F0FB;
+  background-image: 
+    linear-gradient(rgba(66, 102, 179, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(66, 102, 179, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(66, 102, 179, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(66, 102, 179, 0.05) 1px, transparent 5px);
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+  background-position: -2px -2px, -2px -2px, -2px -2px, -2px -2px;
+  position: relative;
+}
+
+.blueprint-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 50px 100px, rgba(0, 30, 60, 0.06) 10px, transparent 15px),
+    radial-gradient(circle at 200px 300px, rgba(0, 30, 60, 0.06) 15px, transparent 20px),
+    radial-gradient(circle at 350px 250px, rgba(0, 30, 60, 0.06) 12px, transparent 18px),
+    linear-gradient(0deg, transparent 45%, rgba(0, 30, 60, 0.03) 46%, rgba(0, 30, 60, 0.03) 54%, transparent 55%),
+    linear-gradient(90deg, transparent 45%, rgba(0, 30, 60, 0.03) 46%, rgba(0, 30, 60, 0.03) 54%, transparent 55%);
+  opacity: 0.6;
+  background-size: 400px 400px;
+  pointer-events: none;
+  z-index: 1;
+}
+
 @keyframes continuous-down {
   0% {
     transform: translateY(-10px);

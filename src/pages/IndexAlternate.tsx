@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -237,8 +236,8 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section with improved alignment */}
-        <section id="contact" className="py-24 bg-white relative overflow-hidden">
+        {/* CTA Section with improved alignment and blueprint background */}
+        <section id="contact" className="py-24 bg-white relative overflow-hidden blueprint-bg">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-3xl rounded-full opacity-30"></div>
           
           <div className="container mx-auto px-6 relative z-10">
