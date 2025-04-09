@@ -129,21 +129,21 @@ html {
 }
 
 .gradient-text-hover .text-container {
-  animation: containerWave 3s ease-in-out infinite;
+  animation: containerWave 6s ease-in-out infinite;
   animation-play-state: running;
 }
 
 .gradient-text-hover:hover .text-container {
-  animation: containerWaveIntense 1.5s ease-in-out infinite;
+  animation: containerWaveIntense 3s ease-in-out infinite;
 }
 
 .gradient-text-hover .char {
   display: inline-block;
-  animation: charWave 3s ease-in-out infinite;
+  animation: charWave 6s ease-in-out infinite;
 }
 
 .gradient-text-hover:hover .char {
-  animation: charWaveIntense 1.5s ease-in-out infinite;
+  animation: charWaveIntense 3s ease-in-out infinite;
 }
 
 .gradient-text-hover .char:nth-child(1) { animation-delay: 0.0s; }
@@ -167,13 +167,13 @@ html {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-1deg);
+    transform: rotate(-0.8deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(1deg);
+    transform: rotate(0.8deg);
   }
   100% {
     transform: rotate(0deg);
@@ -185,13 +185,13 @@ html {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-3deg);
+    transform: rotate(-2.5deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(3deg);
+    transform: rotate(2.5deg);
   }
   100% {
     transform: rotate(0deg);
@@ -203,13 +203,13 @@ html {
     transform: translateY(0px);
   }
   25% {
-    transform: translateY(-1px) rotate(1deg);
+    transform: translateY(-0.8px) rotate(0.8deg);
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(1px) rotate(-1deg);
+    transform: translateY(0.8px) rotate(-0.8deg);
   }
   100% {
     transform: translateY(0px);
@@ -221,13 +221,13 @@ html {
     transform: translateY(0px);
   }
   25% {
-    transform: translateY(-2px) rotate(3deg);
+    transform: translateY(-2px) rotate(2.5deg);
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(2px) rotate(-3deg);
+    transform: translateY(2px) rotate(-2.5deg);
   }
   100% {
     transform: translateY(0px);
