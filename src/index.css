@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -127,43 +128,70 @@ html {
   display: inline-block;
 }
 
+.gradient-text-hover .text-container {
+  animation: containerWave 3s ease-in-out infinite;
+  animation-play-state: running;
+}
+
 .gradient-text-hover:hover .text-container {
-  animation: containerWave 2s ease-in-out infinite;
+  animation: containerWaveIntense 1.5s ease-in-out infinite;
+}
+
+.gradient-text-hover .char {
+  display: inline-block;
+  animation: charWave 3s ease-in-out infinite;
 }
 
 .gradient-text-hover:hover .char {
-  display: inline-block;
-  animation: charWave 2s ease-in-out infinite;
+  animation: charWaveIntense 1.5s ease-in-out infinite;
 }
 
-.gradient-text-hover:hover .char:nth-child(1) { animation-delay: 0.0s; }
-.gradient-text-hover:hover .char:nth-child(2) { animation-delay: 0.05s; }
-.gradient-text-hover:hover .char:nth-child(3) { animation-delay: 0.1s; }
-.gradient-text-hover:hover .char:nth-child(4) { animation-delay: 0.15s; }
-.gradient-text-hover:hover .char:nth-child(5) { animation-delay: 0.2s; }
-.gradient-text-hover:hover .char:nth-child(6) { animation-delay: 0.25s; }
-.gradient-text-hover:hover .char:nth-child(7) { animation-delay: 0.3s; }
-.gradient-text-hover:hover .char:nth-child(8) { animation-delay: 0.35s; }
-.gradient-text-hover:hover .char:nth-child(9) { animation-delay: 0.4s; }
-.gradient-text-hover:hover .char:nth-child(10) { animation-delay: 0.45s; }
-.gradient-text-hover:hover .char:nth-child(11) { animation-delay: 0.5s; }
-.gradient-text-hover:hover .char:nth-child(12) { animation-delay: 0.55s; }
-.gradient-text-hover:hover .char:nth-child(13) { animation-delay: 0.6s; }
-.gradient-text-hover:hover .char:nth-child(14) { animation-delay: 0.65s; }
-.gradient-text-hover:hover .char:nth-child(15) { animation-delay: 0.7s; }
+.gradient-text-hover .char:nth-child(1) { animation-delay: 0.0s; }
+.gradient-text-hover .char:nth-child(2) { animation-delay: 0.05s; }
+.gradient-text-hover .char:nth-child(3) { animation-delay: 0.1s; }
+.gradient-text-hover .char:nth-child(4) { animation-delay: 0.15s; }
+.gradient-text-hover .char:nth-child(5) { animation-delay: 0.2s; }
+.gradient-text-hover .char:nth-child(6) { animation-delay: 0.25s; }
+.gradient-text-hover .char:nth-child(7) { animation-delay: 0.3s; }
+.gradient-text-hover .char:nth-child(8) { animation-delay: 0.35s; }
+.gradient-text-hover .char:nth-child(9) { animation-delay: 0.4s; }
+.gradient-text-hover .char:nth-child(10) { animation-delay: 0.45s; }
+.gradient-text-hover .char:nth-child(11) { animation-delay: 0.5s; }
+.gradient-text-hover .char:nth-child(12) { animation-delay: 0.55s; }
+.gradient-text-hover .char:nth-child(13) { animation-delay: 0.6s; }
+.gradient-text-hover .char:nth-child(14) { animation-delay: 0.65s; }
+.gradient-text-hover .char:nth-child(15) { animation-delay: 0.7s; }
 
 @keyframes containerWave {
   0% {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes containerWaveIntense {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(3deg);
   }
   100% {
     transform: rotate(0deg);
@@ -171,6 +199,24 @@ html {
 }
 
 @keyframes charWave {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-1px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(1px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes charWaveIntense {
   0% {
     transform: translateY(0px);
   }
