@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -184,7 +183,7 @@ html {
 .gradient-text-hover .char:nth-child(14) { animation-delay: 0.65s; }
 .gradient-text-hover .char:nth-child(15) { animation-delay: 0.7s; }
 
-/* Subtle Wave Animation - 50% more subtle than the Motion Graphics animation */
+/* Subtle Wave Animation - active by default and stronger on hover */
 .subtle-wave-text {
   display: inline-flex;
   overflow: hidden;
@@ -192,47 +191,47 @@ html {
 
 .subtle-char {
   display: inline-block;
-  animation: subtleCharWave 9s ease-in-out infinite;
+  animation: subtleCharWave 6s ease-in-out infinite;
   transform-origin: center;
 }
 
 .subtle-wave-text:hover .subtle-char {
-  animation: subtleCharWaveIntense 4.5s ease-in-out infinite;
+  animation: subtleCharWaveIntense 3s ease-in-out infinite;
 }
 
 @keyframes subtleCharWave {
   0% {
-    transform: translateY(-0.05px) rotate(-0.05deg);
+    transform: translateY(-0.1px) rotate(-0.1deg);
   }
   25% {
-    transform: translateY(-0.4px) rotate(0.4deg);
+    transform: translateY(-0.8px) rotate(0.8deg);
   }
   50% {
-    transform: translateY(-0.1px) rotate(-0.05deg);
+    transform: translateY(-0.1px) rotate(-0.1deg);
   }
   75% {
-    transform: translateY(0.4px) rotate(-0.4deg);
+    transform: translateY(0.8px) rotate(-0.8deg);
   }
   100% {
-    transform: translateY(-0.05px) rotate(-0.05deg);
+    transform: translateY(-0.1px) rotate(-0.1deg);
   }
 }
 
 @keyframes subtleCharWaveIntense {
   0% {
-    transform: translateY(-0.15px) rotate(-0.15deg);
+    transform: translateY(-0.3px) rotate(-0.3deg);
   }
   25% {
-    transform: translateY(-1px) rotate(1.25deg);
+    transform: translateY(-2px) rotate(2.5deg);
   }
   50% {
-    transform: translateY(-0.25px) rotate(-0.15deg);
+    transform: translateY(-0.5px) rotate(-0.3deg);
   }
   75% {
-    transform: translateY(1px) rotate(-1.25deg);
+    transform: translateY(2px) rotate(-2.5deg);
   }
   100% {
-    transform: translateY(-0.15px) rotate(-0.15deg);
+    transform: translateY(-0.3px) rotate(-0.3deg);
   }
 }
 
