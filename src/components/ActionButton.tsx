@@ -32,7 +32,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-medium text-darknavy bg-neon/30 p-4 rounded-lg shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-neon/40 ${className}`}
+        className={`inline-block font-medium text-darknavy bg-neon/30 py-2 px-4 rounded-lg shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-neon/40 ${className}`}
       >
         {children}
       </a>
