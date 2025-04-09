@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -60,7 +59,7 @@ const Index = () => {
                 >
                   Services
                 </a>
-                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true}>
+                <ActionButton href={calendarUrl} boxed={true}>
                   Free Consultation
                 </ActionButton>
               </div>
@@ -230,7 +229,7 @@ const Index = () => {
                 <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true}>
+                <ActionButton href={calendarUrl} boxed={true}>
                   Schedule a Meeting
                 </ActionButton>
               </div>
