@@ -122,39 +122,39 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* What Am I Doing Section */}
-        <section id="services" className="py-24 bg-darknavy text-white relative">
+        {/* What Am I Doing Section - Improved contrast with light background */}
+        <section id="services" className="py-24 bg-gray-50 text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">What Am I Doing?</h2>
-              <p className="text-sm md:text-base max-w-3xl mx-auto text-white/80">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-darknavy">What Am I Doing?</h2>
+              <p className="text-sm md:text-base max-w-3xl mx-auto text-darknavy/90">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-neon">Explainer Videos</h3>
-                <p className="text-sm text-white/80">
+              <div className="p-8 rounded-3xl bg-white shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-lg mb-3 text-neon bg-darknavy inline-block px-3 py-1 rounded-md">Explainer Videos</h3>
+                <p className="text-sm text-darknavy/90 mt-4">
                   Break down complex products & services into clear, engaging narratives that your audience can easily understand.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-neon">UI & Product Demos</h3>
-                <p className="text-sm text-white/80">
+              <div className="p-8 rounded-3xl bg-white shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-lg mb-3 text-neon bg-darknavy inline-block px-3 py-1 rounded-md">UI & Product Demos</h3>
+                <p className="text-sm text-darknavy/90 mt-4">
                   Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-neon">Support & Help Center Videos</h3>
-                <p className="text-sm text-white/80">
+              <div className="p-8 rounded-3xl bg-white shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-lg mb-3 text-neon bg-darknavy inline-block px-3 py-1 rounded-md">Support & Help Center Videos</h3>
+                <p className="text-sm text-darknavy/90 mt-4">
                   Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
                 </p>
               </div>
-              <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/10 hover:border-neon/30 transition-all hover:translate-y-[-5px]">
-                <h3 className="font-bold text-lg mb-3 text-neon">Marketing & Social Motion Graphics</h3>
-                <p className="text-sm text-white/80">
+              <div className="p-8 rounded-3xl bg-white shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:translate-y-[-5px]">
+                <h3 className="font-bold text-lg mb-3 text-neon bg-darknavy inline-block px-3 py-1 rounded-md">Marketing & Social Motion Graphics</h3>
+                <p className="text-sm text-darknavy/90 mt-4">
                   Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
                 </p>
               </div>
