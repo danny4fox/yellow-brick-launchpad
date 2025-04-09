@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -114,6 +113,12 @@ html {
 /* Smooth gradient transition for the section backgrounds */
 .bg-section-transition {
   background: linear-gradient(to bottom, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Footer company info border styling */
+.footer-company-border {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 1.5rem;
 }
 
 @keyframes continuous-down {

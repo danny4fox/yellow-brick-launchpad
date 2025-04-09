@@ -3,7 +3,7 @@ import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
 
 const Index = () => {
   // Replace with your actual LinkedIn URL
@@ -187,7 +187,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* What Am I Doing Section - Breaking description into multiple bullet points */}
+        {/* What Am I Doing Section - Added emojis to service box titles */}
         <section id="services" className="py-24 bg-gradient-to-br from-white to-gray-50 text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-16">
@@ -205,7 +205,9 @@ const Index = () => {
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
+                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">
+                    🎬 Explainer Videos
+                  </h3>
                   <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
                     <li>Break down complex products into digestible narratives</li>
                     <li>Transform technical details into engaging stories</li>
@@ -218,7 +220,9 @@ const Index = () => {
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
+                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">
+                    💻 UI & Product Demos
+                  </h3>
                   <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
                     <li>Highlight features with clarity and precision</li>
                     <li>Showcase functionality in an intuitive visual way</li>
@@ -231,7 +235,9 @@ const Index = () => {
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
+                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">
+                    🔍 Support & Help Center Videos
+                  </h3>
                   <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
                     <li>Boost onboarding with clear instructional content</li>
                     <li>Reduce churn by enhancing user understanding</li>
@@ -244,7 +250,9 @@ const Index = () => {
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
-                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
+                  <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">
+                    🚀 Marketing & Social Motion Graphics
+                  </h3>
                   <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
                     <li>Maximize engagement with eye-catching animations</li>
                     <li>Boost conversions with platform-optimized content</li>
@@ -282,18 +290,39 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Updated Footer with company information */}
+      {/* Updated Footer with company information and social media icons */}
       <footer className="bg-black text-center py-8 text-white/60">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <p className="text-sm font-light">© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
-            <div className="text-xs text-white/40 flex flex-col space-y-1">
-              <p>DB MOTION</p>
-              <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>
-              <p>CVR: 43209493</p>
-              <p>hello@danielbodnar.io</p>
-              <p className="mt-2">Denmark</p>
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between space-y-4 md:space-y-0">
+            <div className="text-sm font-light md:w-1/3 md:text-left">
+              <p>© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
+              
+              {/* Social Media Icons */}
+              <div className="flex space-x-4 mt-4 justify-center md:justify-start">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                  <Linkedin size={20} />
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                  <Youtube size={20} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                  <Instagram size={20} />
+                </a>
+              </div>
             </div>
+            
+            {/* Company Info with Left Border */}
+            <div className="flex md:w-1/3 text-xs text-white/40 md:border-l border-white/20 md:pl-6 md:text-left">
+              <div className="flex flex-col space-y-1">
+                <p>DB MOTION</p>
+                <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>
+                <p>CVR: 43209493</p>
+                <p>hello@danielbodnar.io</p>
+                <p className="mt-2">Denmark</p>
+              </div>
+            </div>
+            
+            <div className="md:w-1/3"></div>
           </div>
         </div>
       </footer>
