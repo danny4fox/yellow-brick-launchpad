@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -30,7 +29,7 @@ const IndexAlternate = () => {
         {/* Navigation */}
         <div className="container mx-auto px-6 py-6 relative z-10">
           <nav>
-            <div className="flex items-center justify-between px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/10 shadow-lg">
+            <div className="flex items-center justify-between px-8 py-4 rounded-2xl">
               <a href="/" className="text-xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>

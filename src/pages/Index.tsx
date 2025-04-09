@@ -29,14 +29,14 @@ const Index = () => {
         {/* Navigation */}
         <div className="container mx-auto px-6 py-6 relative z-10">
           <nav>
-            <div className="flex items-center justify-between px-8 py-4 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-lg">
+            <div className="flex items-center justify-between px-8 py-4 rounded-2xl">
               <a href="/" className="text-xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
               <div className="flex items-center gap-6">
                 <Link to="/alternate" className="text-white/80 hover:text-white transition-colors">
-                  Alternate Version
+                  Services
                 </Link>
                 <ActionButton href={calendarUrl} className="shadow-xl">
                   Free Consultation
