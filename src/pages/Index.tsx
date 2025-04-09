@@ -287,9 +287,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated with gradient background transition */}
-        <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-purple via-darknavy/90 to-pink">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/30 via-neon/20 to-pink/30 blur-3xl rounded-full opacity-40"></div>
+        {/* CTA Section - Updated with dark radial gradient background */}
+        <section id="contact" className="py-24 relative overflow-hidden bg-darknavy">
+          <div className="absolute inset-0 w-full h-full bg-[radial-gradient(circle_at_center,_#6C51F580_0%,_#1A1F2C_50%,_#0E0B1D_100%)] opacity-70"></div>
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">

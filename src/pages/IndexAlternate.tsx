@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -135,7 +134,7 @@ const IndexAlternate = () => {
                     Today, I help innovative companies—especially in SaaS, IoT, and Robotics—bring clarity to complex concepts.
                   </p>
                   <p>
-                    I'm all about delivering the highest amount of meaning in the least amount of time—no fluff, just crystal-clear communication. 
+                    I'm all about delivering the highest amount of meaning in the least amount of time��no fluff, just crystal-clear communication. 
                     And what better way to do that than with motion design?
                   </p>
                   <p className="italic font-medium text-lg border-b-2 border-neon/50 pb-2 inline-block">
@@ -279,9 +278,9 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section with improved alignment and gradient background */}
-        <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-purple via-neon/30 to-pink">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/30 via-neon/20 to-pink/30 blur-3xl rounded-full opacity-40"></div>
+        {/* CTA Section with dark radial gradient background */}
+        <section id="contact" className="py-24 relative overflow-hidden bg-darknavy">
+          <div className="absolute inset-0 w-full h-full bg-[radial-gradient(circle_at_center,_#6C51F580_0%,_#221F26_50%,_#0E0B1D_100%)] opacity-80"></div>
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl border border-neon/20 shadow-[0_0_30px_rgba(235,255,0,0.15)] p-10">
