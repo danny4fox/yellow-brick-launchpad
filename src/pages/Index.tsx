@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -51,14 +50,12 @@ const Index = () => {
           <div className="flex flex-col items-center justify-center text-center px-0">
             <h1 className="text-5xl md:text-7xl font-normal leading-tight tracking-tight mx-0 my-0">
               <div className="block mb-2">Bringing <strong className="relative">
-                <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0"></span>
                 <span className="relative z-10">SaaS</span>
               </strong>, <strong className="relative">
-                <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0"></span>
                 <span className="relative z-10">IoT</span>
               </strong> Brands to Life</div>
               <div className="block">with <span className="font-bold text-neon italic relative">
-                <span className="absolute -inset-2 bg-neon/20 blur-md rounded-full z-0"></span>
+                <span className="absolute -inset-2 bg-neon/14 blur-md rounded-full z-0"></span>
                 <span className="relative z-10">Motion Graphics</span>
               </span></div>
             </h1>
