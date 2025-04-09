@@ -236,8 +236,8 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section with improved alignment, blueprint background and subtle gradient */}
-        <section id="contact" className="py-24 bg-white relative overflow-hidden blueprint-bg">
+        {/* CTA Section with improved alignment and gradient background */}
+        <section id="contact" className="py-24 bg-white relative overflow-hidden gradient-bg">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/5 via-neon/5 to-pink/5 blur-3xl rounded-full opacity-40"></div>
           
           <div className="container mx-auto px-6 relative z-10">
