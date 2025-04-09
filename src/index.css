@@ -105,3 +105,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+.gradient-text-hover {
+  transition: color 0.3s ease;
+}
+
+.gradient-text-hover:hover {
+  background: linear-gradient(90deg, #0E0B1D, #6C51F5, #F42AA6, #EBFF00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-hover:hover .glow {
+  /* Keep the same glow animation on hover */
+  opacity: 0.8;
+}

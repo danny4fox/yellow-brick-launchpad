@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,6 +67,8 @@ export default {
 				},
 				darknavy: "#0E0B1D",
 				neon: "#EBFF00",
+				purple: "#6C51F5",
+				pink: "#F42AA6",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
