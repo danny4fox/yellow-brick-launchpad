@@ -50,8 +50,8 @@ const Index = () => {
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center px-0">
             <h1 className="text-5xl md:text-6xl font-normal leading-tight tracking-tight mx-0 my-0">
-              <div className="block">Bringing SaaS, IoT Brands to Life</div>
-              <div className="block">with <span className="font-bold text-neon">Motion Graphics</span></div>
+              <div className="block">Bringing <strong>SaaS</strong>, <strong>IoT</strong> Brands to Life</div>
+              <div className="block">with <span className="font-bold text-neon italic">Motion Graphics</span></div>
             </h1>
             
             <div className="mt-8 text-3xl md:text-4xl font-bold">
