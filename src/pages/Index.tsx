@@ -20,9 +20,9 @@ const Index = () => {
   
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
-      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
+      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden h-screen">
         {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full opacity-40 z-0">
+        <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
         </div>
         
@@ -48,11 +48,12 @@ const Index = () => {
         
         {/* Hero Content with improved spacing */}
         <div className="container mx-auto px-6 py-32 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center px-0">
+          <div className="flex flex-col items-center justify-center text-center px-0 h-full">
             <div className="space-y-6 max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mx-0 my-0">
-                Bringing SaaS, IoT Brands <br className="hidden sm:block" />
-                to Life <span className="text-neon">with Motion Graphics</span>
+                <div>Bringing SaaS, IoT Brands<br className="hidden sm:block" />
+                to Life</div>
+                <div className="text-neon">with Motion Graphics</div>
               </h1>
               <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/90 font-light">
                 Guidance that flows, brand that sticks
