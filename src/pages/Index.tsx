@@ -106,8 +106,9 @@ const Index = () => {
                 </div>
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
-                  <span className="relative z-10 text-darknavy">Who Am I?</span>
+                <h2 className="text-2xl md:text-4xl font-bold mb-8 relative inline-block">
+                  <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
+                  <span className="relative z-10 text-white px-6 py-2">Who Am I?</span>
                 </h2>
                 <div className="space-y-4 text-sm md:text-base text-darknavy">
                   <p className="font-medium">
@@ -194,7 +195,7 @@ const Index = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
                 <span className="relative z-10 text-darknavy">What Am I Doing?</span>
               </h2>
-              <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 font-normal flex items-center justify-center bg-darknavy px-6 py-2 rounded-md">
+              <p className="text-base md:text-xl max-w-3xl mx-auto text-darknavy font-semibold">
                 I understand the unique challenges of technology companies and create visual 
                 content that truly resonates
               </p>
@@ -203,7 +204,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-softyellow rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
                   <p className="text-base text-darknavy font-medium mt-4">
                     Break down complex products & services into clear, engaging narratives that your audience can easily understand.
@@ -213,7 +214,7 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-softyellow rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
                   <p className="text-base text-darknavy font-medium mt-4">
                     Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.
@@ -223,7 +224,7 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-softyellow rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
                   <p className="text-base text-darknavy font-medium mt-4">
                     Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.
@@ -233,7 +234,7 @@ const Index = () => {
               
               <div className="group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
-                <div className="relative p-8 bg-softyellow rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
+                <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
                   <p className="text-base text-darknavy font-medium mt-4">
                     Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.
