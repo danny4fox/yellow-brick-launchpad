@@ -50,8 +50,8 @@ const Index = () => {
           <div className="flex flex-col items-center justify-center text-center px-0">
             <div className="space-y-6 max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mx-0 my-0">
-                <div>Bringing SaaS, IoT Brands</div>
-                <div>to Life with Motion Graphics</div>
+                <div>Bringing SaaS, IoT Brands to Life</div>
+                <div>with Motion Graphics</div>
                 <div className="text-neon">Guidance that flows, brand that sticks</div>
               </h1>
             </div>
