@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -183,7 +184,8 @@ const IndexAlternate = () => {
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
-                <span className="relative z-10 text-darknavy">What Am I Doing?</span>
+                <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
+                <span className="relative z-10 text-white px-6 py-2">What Am I Doing?</span>
               </h2>
               <p className="text-base md:text-xl max-w-3xl mx-auto text-darknavy font-semibold">
                 I understand the unique challenges of technology companies and create visual 
