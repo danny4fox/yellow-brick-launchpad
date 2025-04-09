@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -137,9 +138,11 @@ const IndexAlternate = () => {
                 <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
-              <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center">
+              <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center transition-all duration-300">
                 <ArrowDown size={28} className="mr-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
-                Check out my recent <span className="mx-2 font-bold">showreel</span>
+                <span className="mx-2 font-bold transition-all duration-300 group-hover:scale-115">
+                  Check out my recent <span className="mx-1">showreel</span>
+                </span>
                 <ArrowDown size={28} className="ml-2 animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0" />
               </p>
             </div>
