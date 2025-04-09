@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -198,8 +197,11 @@ const IndexAlternate = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Explainer Videos</h3>
-                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4">
-                    <li>Break down complex products & services into clear, engaging narratives that your audience can easily understand.</li>
+                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
+                    <li>Break down complex products into digestible narratives</li>
+                    <li>Transform technical details into engaging stories</li>
+                    <li>Create clear visualization of abstract concepts</li>
+                    <li>Build emotional connection with your audience</li>
                   </ul>
                 </div>
               </div>
@@ -208,8 +210,11 @@ const IndexAlternate = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">UI & Product Demos</h3>
-                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4">
-                    <li>Highlight features with clarity and showcase your product's functionality in an intuitive, visual way.</li>
+                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
+                    <li>Highlight features with clarity and precision</li>
+                    <li>Showcase functionality in an intuitive visual way</li>
+                    <li>Demonstrate user workflows through animation</li>
+                    <li>Present complex interactions in simplified form</li>
                   </ul>
                 </div>
               </div>
@@ -218,8 +223,11 @@ const IndexAlternate = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Support & Help Center Videos</h3>
-                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4">
-                    <li>Boost onboarding & reduce churn with clear, instructional content that helps users get the most from your product.</li>
+                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
+                    <li>Boost onboarding with clear instructional content</li>
+                    <li>Reduce churn by enhancing user understanding</li>
+                    <li>Solve common pain points with visual guidance</li>
+                    <li>Create reusable tutorials for customer success</li>
                   </ul>
                 </div>
               </div>
@@ -228,8 +236,11 @@ const IndexAlternate = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-neon to-neon/30 opacity-70 group-hover:opacity-100 rounded-3xl blur-sm transition-all"></div>
                 <div className="relative p-8 bg-[#FEF7CD] rounded-3xl shadow-2xl h-full border-2 border-neon/30 group-hover:border-neon/50 transition-all">
                   <h3 className="font-bold text-xl mb-3 text-white bg-darknavy px-4 py-2 rounded-lg inline-block">Marketing & Social Motion Graphics</h3>
-                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4">
-                    <li>Maximize engagement & conversions with eye-catching animations designed specifically for marketing and social media channels.</li>
+                  <ul className="list-disc pl-5 text-base text-darknavy font-medium mt-4 space-y-2">
+                    <li>Maximize engagement with eye-catching animations</li>
+                    <li>Boost conversions with platform-optimized content</li>
+                    <li>Create scroll-stopping social media assets</li>
+                    <li>Build campaign consistency across all channels</li>
                   </ul>
                 </div>
               </div>
@@ -238,7 +249,7 @@ const IndexAlternate = () => {
         </section>
 
         {/* CTA Section with improved alignment and gradient background */}
-        <section id="contact" className="py-24 bg-white relative overflow-hidden gradient-bg">
+        <section id="contact" className="py-24 relative overflow-hidden bg-section-transition">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple/5 via-neon/5 to-pink/5 blur-3xl rounded-full opacity-40"></div>
           
           <div className="container mx-auto px-6 relative z-10">
@@ -263,11 +274,17 @@ const IndexAlternate = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-darknavy text-center py-8 text-white/60 text-xs">
+      <footer className="bg-darknavy text-center py-8 text-white/60">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center justify-center space-y-3">
+          <div className="flex flex-col items-center justify-center space-y-4">
             <p className="text-sm font-light">© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
-            <p className="text-xs text-white/40">Bay Area · Copenhagen</p>
+            <div className="text-xs text-white/40 flex flex-col space-y-1">
+              <p>DB MOTION</p>
+              <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>
+              <p>CVR: 43209493</p>
+              <p>hello@danielbodnar.io</p>
+              <p className="mt-2">Denmark</p>
+            </div>
           </div>
         </div>
       </footer>

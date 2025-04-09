@@ -111,6 +111,11 @@ html {
   position: relative;
 }
 
+/* Smooth gradient transition for the section backgrounds */
+.bg-section-transition {
+  background: linear-gradient(to bottom, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%);
+}
+
 @keyframes continuous-down {
   0% {
     transform: translateY(-10px);
