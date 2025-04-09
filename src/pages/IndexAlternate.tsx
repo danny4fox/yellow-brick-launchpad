@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -129,7 +130,7 @@ const IndexAlternate = () => {
 
         {/* Video Showcase Section with enhanced contrast */}
         <section className="py-24 bg-gradient-to-tr from-gray-100 to-white relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-neon/5 blur-3xl rounded-full opacity-30"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-white/20 blur-3xl rounded-full opacity-30"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">

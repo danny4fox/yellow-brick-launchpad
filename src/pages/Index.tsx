@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -139,11 +140,10 @@ const Index = () => {
 
         {/* Video Showcase Section - Enhanced gradient background */}
         <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden">
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-2/3 bg-neon/10 blur-3xl rounded-full opacity-40"></div>
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-2/3 bg-white/10 blur-3xl rounded-full opacity-40"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
-                <span className="absolute -inset-2 bg-neon/20 blur-md rounded-lg z-0"></span>
                 <span className="relative z-10">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6">
