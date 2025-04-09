@@ -157,41 +157,6 @@ html {
   animation-delay: 0.58s;
 }
 
-@keyframes single-wink {
-  0%, 45% {
-    content: ":)";
-  }
-  50%, 55% {
-    content: ";)";
-  }
-  60%, 100% {
-    content: ":)";
-  }
-}
-
-.winking-emoji::after {
-  content: ":)";
-}
-
-.wink-on-hover-parent:hover .winking-emoji::after {
-  animation: single-wink 2s forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes wink {
-  0%, 45%, 100% {
-    content: ":)";
-  }
-  50%, 95% {
-    content: ";)";
-  }
-}
-
-.winking-emoji::after {
-  content: ":)";
-  animation: wink 3s infinite;
-}
-
 @keyframes gentle-float {
   0% {
     transform: translateX(0px);
