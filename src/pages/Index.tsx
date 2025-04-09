@@ -59,7 +59,7 @@ const Index = () => {
                 >
                   Services
                 </a>
-                <ActionButton href={calendarUrl} boxed={true}>
+                <ActionButton href={calendarUrl} highlighted={true}>
                   Free Consultation
                 </ActionButton>
               </div>
@@ -229,7 +229,7 @@ const Index = () => {
                 <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} boxed={true}>
+                <ActionButton href={calendarUrl} highlighted={true}>
                   Schedule a Meeting
                 </ActionButton>
               </div>

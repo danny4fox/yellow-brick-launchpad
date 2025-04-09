@@ -12,6 +12,7 @@ interface ActionButtonProps {
   glow?: boolean;
   textOnly?: boolean;
   boxed?: boolean;
+  highlighted?: boolean;
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({ 
@@ -24,8 +25,22 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   wave = false,
   glow = false,
   textOnly = false,
-  boxed = false
+  boxed = false,
+  highlighted = false
 }) => {
+  if (highlighted) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-block font-medium text-darknavy bg-neon/60 py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon transition-all duration-300 hover:bg-neon/70 ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
+  
   if (boxed) {
     return (
       <a
