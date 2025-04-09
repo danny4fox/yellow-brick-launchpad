@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -51,7 +52,8 @@ const IndexAlternate = () => {
           <div className="flex flex-col items-center justify-center text-center">
             <div className="space-y-6 max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                <div>Bringing SaaS, IoT Brands</div>
+                <div>Bringing SaaS, IoT Brands<br className="hidden sm:block" />
+                to Life</div>
                 <div className="text-neon">with Motion Graphics</div>
               </h1>
               <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/90 font-light">
