@@ -149,7 +149,7 @@ const Index = () => {
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center transition-all duration-300">
                 {/* First set of circles - Left side */}
-                <span className="relative">
+                <span className="relative group-hover:opacity-0 transition-opacity duration-300">
                   {/* First circle - Black */}
                   <span className="bg-black rounded-full w-10 h-10 inline-block mr-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
@@ -169,7 +169,7 @@ const Index = () => {
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center mr-2 relative">
                     <ArrowDown 
                       size={24} 
-                      strokeWidth={2}
+                      strokeWidth={3} /* Increased from 2 to 3 for thicker arrow */
                       className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
                       style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
                     />
@@ -182,7 +182,7 @@ const Index = () => {
                 </span>
                 
                 {/* Second set of circles - Right side */}
-                <span className="relative">
+                <span className="relative group-hover:opacity-0 transition-opacity duration-300">
                   {/* First circle - Black */}
                   <span className="bg-black rounded-full w-10 h-10 inline-block ml-2 animate-continuous-down-bg absolute inset-0" 
                         style={{ animationDelay: '0.15s', animationName: 'shared-arrow-bg-motion' }}>
@@ -202,7 +202,7 @@ const Index = () => {
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center ml-2 relative">
                     <ArrowDown 
                       size={24} 
-                      strokeWidth={2}
+                      strokeWidth={3} /* Increased from 2 to 3 for thicker arrow */
                       className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
                       style={{ animationDelay: '0s', animationName: 'shared-arrow-motion' }} 
                     />

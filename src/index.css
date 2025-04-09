@@ -133,11 +133,11 @@ html {
 }
 
 .animate-continuous-down {
-  animation: continuous-down 1.5s ease-in-out infinite alternate;
+  animation: continuous-down 2.1s ease-in-out infinite alternate;
 }
 
 .animate-continuous-down-bg {
-  animation: shared-arrow-bg-motion 1.5s ease-in-out infinite alternate;
+  animation: shared-arrow-bg-motion 2.1s ease-in-out infinite alternate;
 }
 
 @keyframes gentle-float {
