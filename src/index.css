@@ -164,72 +164,72 @@ html {
 
 @keyframes containerWave {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-0.1deg);
   }
   25% {
     transform: rotate(-0.8deg);
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate(-0.2deg);
   }
   75% {
     transform: rotate(0.8deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-0.1deg);
   }
 }
 
 @keyframes containerWaveIntense {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-0.3deg);
   }
   25% {
     transform: rotate(-2.5deg);
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate(-0.5deg);
   }
   75% {
     transform: rotate(2.5deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-0.3deg);
   }
 }
 
 @keyframes charWave {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-0.1px) rotate(-0.1deg);
   }
   25% {
     transform: translateY(-0.8px) rotate(0.8deg);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateY(-0.2px) rotate(-0.1deg);
   }
   75% {
     transform: translateY(0.8px) rotate(-0.8deg);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-0.1px) rotate(-0.1deg);
   }
 }
 
 @keyframes charWaveIntense {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-0.3px) rotate(-0.3deg);
   }
   25% {
     transform: translateY(-2px) rotate(2.5deg);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateY(-0.5px) rotate(-0.3deg);
   }
   75% {
     transform: translateY(2px) rotate(-2.5deg);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-0.3px) rotate(-0.3deg);
   }
 }
