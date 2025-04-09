@@ -45,7 +45,7 @@ const IndexAlternate = () => {
                 <Link to="/" className="text-white/80 hover:text-white transition-colors">
                   Original Version
                 </Link>
-                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true} className="text-xl font-bold">
+                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true}>
                   Free Consultation
                 </ActionButton>
               </div>
@@ -219,7 +219,7 @@ const IndexAlternate = () => {
                 <ActionButton href={linkedInUrl} inverse={true} className="border-neon text-neon hover:text-neon hover:border-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true} className="text-xl font-bold">
+                <ActionButton href={calendarUrl} gradient={true} wave={true} glow={true} textOnly={true}>
                   Schedule a Meeting
                 </ActionButton>
               </div>
