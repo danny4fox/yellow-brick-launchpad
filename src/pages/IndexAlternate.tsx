@@ -1,8 +1,10 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
+import { ArrowDown } from 'lucide-react';
 
 const IndexAlternate = () => {
   // Replace with your actual LinkedIn URL
@@ -136,8 +138,10 @@ const IndexAlternate = () => {
                 <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
-              <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium">
-                Check out my recent showreel
+              <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center">
+                <ArrowDown size={20} className="mr-2 animate-bounce" />
+                Check out my recent <span className="font-bold">showreel</span>
+                <ArrowDown size={20} className="ml-2 animate-bounce" />
               </p>
             </div>
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-neon/20">

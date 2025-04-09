@@ -4,6 +4,7 @@ import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
+import { ArrowDown } from 'lucide-react';
 
 const Index = () => {
   // Replace with your actual LinkedIn URL
@@ -146,11 +147,13 @@ const Index = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
                 <span className="relative z-10">My Work</span>
               </h2>
-              <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6">
-                Check out my recent showreel
+              <p className="text-sm md:text-lg max-w-3xl mx-auto text-white/90 mt-6 flex items-center justify-center">
+                <ArrowDown size={20} className="mr-2 animate-bounce" />
+                Check out my recent <span className="font-bold">showreel</span>
+                <ArrowDown size={20} className="ml-2 animate-bounce" />
               </p>
             </div>
-            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(235,255,0,0.15)] bg-white/5 backdrop-blur-sm p-1">
+            <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)] bg-white/5 backdrop-blur-sm p-1">
               <VideoEmbed youtubeId={youtubeVideoId} fullWidth={true} />
             </div>
           </div>
