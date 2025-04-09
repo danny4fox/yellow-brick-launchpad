@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -21,6 +22,20 @@ const IndexAlternate = () => {
   // Motion Graphics text with individual character spans
   const motionGraphicsText = "Motion Graphics".split('').map((char, index) => (
     <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+      {char === ' ' ? '\u00A0' : char}
+    </span>
+  ));
+  
+  // Who Am I text with individual character spans
+  const whoAmIText = "Who Am I?".split('').map((char, index) => (
+    <span key={index} className="subtle-char" style={{ animationDelay: `${index * 0.025}s` }}>
+      {char === ' ' ? '\u00A0' : char}
+    </span>
+  ));
+  
+  // What Am I Doing text with individual character spans
+  const whatAmIDoingText = "What Am I Doing?".split('').map((char, index) => (
+    <span key={index} className="subtle-char" style={{ animationDelay: `${index * 0.025}s` }}>
       {char === ' ' ? '\u00A0' : char}
     </span>
   ));
@@ -97,7 +112,9 @@ const IndexAlternate = () => {
               <div className="md:w-2/3">
                 <h2 className="text-2xl md:text-4xl font-bold mb-8 relative inline-block">
                   <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
-                  <span className="relative z-10 text-white px-6 py-2">Who Am I?</span>
+                  <span className="relative z-10 text-white px-6 py-2 subtle-wave-text">
+                    {whoAmIText}
+                  </span>
                 </h2>
                 <div className="space-y-4 text-sm md:text-base text-darknavy">
                   <p className="font-medium">
@@ -184,7 +201,9 @@ const IndexAlternate = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 relative inline-block">
                 <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
-                <span className="relative z-10 text-white px-6 py-2">What Am I Doing?</span>
+                <span className="relative z-10 text-white px-6 py-2 subtle-wave-text">
+                  {whatAmIDoingText}
+                </span>
               </h2>
               <p className="text-sm md:text-lg max-w-2xl mx-auto text-darknavy font-medium mt-6">
                 I understand the unique challenges of technology companies and create visual 
@@ -281,11 +300,15 @@ const IndexAlternate = () => {
         </section>
       </main>
 
-      {/* Updated Footer with centered copyright and social icons, company info shifted to right column */}
+      {/* Updated Footer with copyright and social icons in middle column, company info in right column with border */}
       <footer className="bg-darknavy text-center py-8 text-white/60">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0">
-            <div className="text-center md:w-1/3">
+            {/* Empty first column */}
+            <div className="hidden md:block md:w-1/3"></div>
+            
+            {/* Copyright and social icons - middle column */}
+            <div className="md:w-1/3 text-center">
               <p>© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
               
               {/* Social Media Icons - Centered */}
@@ -302,17 +325,13 @@ const IndexAlternate = () => {
               </div>
             </div>
             
-            {/* Empty middle column */}
-            <div className="hidden md:block md:w-1/3"></div>
-            
-            {/* Company Info moved to right column */}
-            <div className="md:w-1/3 text-xs text-white/40 md:text-right">
+            {/* Company Info - right column with border */}
+            <div className="md:w-1/3 text-xs text-white/40 text-left footer-company-border">
               <div className="flex flex-col space-y-1">
                 <p>DB MOTION</p>
                 <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>
                 <p>CVR: 43209493</p>
                 <p>hello@danielbodnar.io</p>
-                <p className="mt-2">Denmark</p>
               </div>
             </div>
           </div>
