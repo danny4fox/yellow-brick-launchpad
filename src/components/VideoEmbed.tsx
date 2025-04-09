@@ -23,7 +23,7 @@ const VideoEmbed: React.FC<VideoEmbedProps> = ({
     <div className={`${isBackground ? 'absolute inset-0 w-full h-full' : ''}`}>
       {isBackground ? (
         <iframe
-          className="w-full h-full border-0 object-cover pointer-events-none"
+          className="w-full h-full border-0 object-cover pointer-events-none scale-[1.5]"
           src={`https://www.youtube.com/embed/${youtubeId}${videoParams}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
