@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -139,7 +140,7 @@ const Index = () => {
         </section>
 
         {/* Video Showcase Section - Enhanced gradient background */}
-        <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden group">
+        <section id="work" className="py-24 bg-gradient-to-tr from-darknavy via-darknavy/95 to-black/90 relative overflow-hidden group wink-on-hover-parent">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-2/3 bg-white/10 blur-3xl rounded-full opacity-40"></div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">

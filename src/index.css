@@ -141,6 +141,27 @@ html {
   animation-delay: 0.58s;
 }
 
+@keyframes single-wink {
+  0%, 45% {
+    content: ":)";
+  }
+  50%, 55% {
+    content: ";)";
+  }
+  60%, 100% {
+    content: ":)";
+  }
+}
+
+.winking-emoji::after {
+  content: ":)";
+}
+
+.wink-on-hover-parent:hover .winking-emoji::after {
+  animation: single-wink 2s forwards;
+  animation-delay: 0.5s;
+}
+
 @keyframes wink {
   0%, 45%, 100% {
     content: ":)";
