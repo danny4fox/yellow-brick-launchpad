@@ -18,6 +18,13 @@ const Index = () => {
   // Background video ID
   const backgroundVideoId = "mI_SHuTntdc";
   
+  // Motion Graphics text with individual character spans
+  const motionGraphicsText = "Motion Graphics".split('').map((char, index) => (
+    <span key={index} className="text" style={{ animationDelay: `${index * 0.05}s` }}>
+      {char}
+    </span>
+  ));
+  
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -57,7 +64,7 @@ const Index = () => {
               </strong> Brands to Life</div>
               <div className="block">with <span className="gradient-text-hover font-bold italic relative">
                 <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
-                <span className="text">Motion Graphics</span>
+                <span className="inline-flex">{motionGraphicsText}</span>
               </span></div>
             </h1>
             
