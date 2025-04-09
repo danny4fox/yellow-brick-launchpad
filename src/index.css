@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -110,14 +109,13 @@ html {
   transition: color 0.3s ease;
 }
 
-.gradient-text-hover:hover {
+.gradient-text-hover .glow {
   background: linear-gradient(90deg, #0E0B1D, #6C51F5, #F42AA6, #EBFF00);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
 
 .gradient-text-hover:hover .glow {
-  /* Keep the same glow animation on hover */
   opacity: 0.8;
+  transform: scale(1.1);
 }

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -55,8 +56,8 @@ const Index = () => {
                 <span className="relative z-10">IoT</span>
               </strong> Brands to Life</div>
               <div className="block">with <span className="gradient-text-hover font-bold italic relative">
-                <span className="absolute -inset-2 bg-neon/20 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
-                <span className="relative z-10">Motion Graphics</span>
+                <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
+                <span className="relative z-10 text-white">Motion Graphics</span>
               </span></div>
             </h1>
             
