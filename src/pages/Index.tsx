@@ -39,6 +39,13 @@ const Index = () => {
     </span>
   ));
   
+  // Worked With text with individual character spans
+  const workedWithText = "Worked With".split('').map((char, index) => (
+    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+      {char === ' ' ? '\u00A0' : char}
+    </span>
+  ));
+  
   // Smooth scroll handler for anchor links
   const scrollToSection = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault();
@@ -282,6 +289,35 @@ const Index = () => {
                     <li>Build campaign consistency across all channels</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Worked With Section */}
+        <section className="py-16 bg-black text-white relative">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+                <span className="absolute -inset-1 -skew-y-3 bg-darknavy rounded-md z-0"></span>
+                <span className="relative z-10 text-white px-6 py-2 gradient-text-hover">
+                  <span className="text-container inline-flex">
+                    {workedWithText}
+                  </span>
+                </span>
+              </h2>
+              <p className="text-sm md:text-lg max-w-2xl mx-auto text-white/90 mt-6">
+                Trusted by innovative brands around the world
+              </p>
+            </div>
+            
+            <div className="max-w-6xl mx-auto bg-black/50 backdrop-blur-sm p-8 rounded-xl">
+              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                <img 
+                  src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" 
+                  alt="Companies I've worked with including Google, Gulf, Digital Guest, Turf Tank, RaskRask, and Sign.com" 
+                  className="w-full max-w-5xl mx-auto"
+                />
               </div>
             </div>
           </div>
