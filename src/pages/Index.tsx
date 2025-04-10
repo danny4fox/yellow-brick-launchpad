@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -7,11 +6,10 @@ import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram, Menu, X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
-
 const Index = () => {
   const isMobile = useIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
 
@@ -66,7 +64,6 @@ const Index = () => {
       }
     }
   };
-
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -83,8 +80,7 @@ const Index = () => {
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
-              {isMobile ? (
-                <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              {isMobile ? <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                   <DrawerTrigger asChild>
                     <button className="text-white p-2" aria-label="Menu">
                       <Menu size={24} />
@@ -98,11 +94,7 @@ const Index = () => {
                       </button>
                     </div>
                     <div className="flex flex-col gap-6">
-                      <a 
-                        href="#work" 
-                        className="text-white/90 hover:text-white text-xl font-medium transition-colors" 
-                        onClick={scrollToSection('work')}
-                      >
+                      <a href="#work" className="text-white/90 hover:text-white text-xl font-medium transition-colors" onClick={scrollToSection('work')}>
                         Services
                       </a>
                       <ActionButton href={calendarUrl} highlighted={true} className="w-full text-center">
@@ -110,28 +102,24 @@ const Index = () => {
                       </ActionButton>
                     </div>
                   </DrawerContent>
-                </Drawer>
-              ) : (
-                <div className="flex items-center gap-6">
+                </Drawer> : <div className="flex items-center gap-6">
                   <a href="#work" className="text-white/80 hover:text-white transition-colors" onClick={scrollToSection('work')}>
                     Services
                   </a>
                   <ActionButton href={calendarUrl} highlighted={true}>
                     Free Consultation
                   </ActionButton>
-                </div>
-              )}
+                </div>}
             </div>
           </nav>
         </div>
         
         {/* Hero Content with improved spacing and glow effect */}
         <div className="container mx-auto px-6 py-32 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center px-0">
+          <div className="flex flex-col items-center justify-center text-center px-[36px]">
             <h1 className="text-4xl md:text-7xl font-normal leading-tight tracking-tight mx-0 my-0 px-2">
               {/* Mobile-friendly header with decreasing font sizes */}
-              {isMobile ? (
-                <>
+              {isMobile ? <>
                   <div className="block mb-1 text-4xl">Bringing <strong className="relative"><span className="relative z-10">SaaS</span></strong>, <strong className="relative"><span className="relative z-10">IoT</span></strong> Brands</div>
                   <div className="block mb-1 text-3xl">to Life with</div>
                   <div className="block text-4xl">
@@ -142,9 +130,7 @@ const Index = () => {
                       </span>
                     </span>
                   </div>
-                </>
-              ) : (
-                <>
+                </> : <>
                   <div className="block mb-2">Bringing <strong className="relative">
                     <span className="relative z-10">SaaS</span>
                   </strong>, <strong className="relative">
@@ -156,12 +142,11 @@ const Index = () => {
                       {motionGraphicsText}
                     </span>
                   </span></div>
-                </>
-              )}
+                </>}
             </h1>
             
             <div className="mt-12 text-xl md:text-4xl font-bold text-white/90 relative">
-              <span className="absolute -inset-2 bg-white/5 blur-lg rounded-full z-0"></span>
+              <span className="absolute -inset-2 bg-white/5 blur-lg rounded-full z-0 py-0"></span>
               <span className="relative z-10">Guidance that flows, brand that sticks</span>
             </div>
           </div>
