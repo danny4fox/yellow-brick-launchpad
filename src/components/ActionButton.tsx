@@ -14,6 +14,7 @@ interface ActionButtonProps {
   boxed?: boolean;
   highlighted?: boolean;
   darkHighlighted?: boolean;
+  waveAnimation?: boolean;
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({ 
@@ -28,7 +29,8 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   textOnly = false,
   boxed = false,
   highlighted = false,
-  darkHighlighted = false
+  darkHighlighted = false,
+  waveAnimation = false
 }) => {
   // Create animation spans for text if highlighted button
   const renderAnimatedText = (text: React.ReactNode) => {
@@ -44,6 +46,28 @@ const ActionButton: React.FC<ActionButtonProps> = ({
               {char === ' ' ? '\u00A0' : char}
             </span>
           ))}
+        </span>
+      );
+    }
+    return text;
+  };
+
+  // Create wave animation for text like "Motion Graphics"
+  const renderWaveAnimationText = (text: React.ReactNode) => {
+    if (waveAnimation && typeof text === 'string') {
+      return (
+        <span className="gradient-text-hover">
+          <span className="text-container inline-flex">
+            {text.split('').map((char, index) => (
+              <span 
+                key={index} 
+                className="char" 
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </span>
+            ))}
+          </span>
         </span>
       );
     }
@@ -85,7 +109,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         rel="noopener noreferrer"
         className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy ${className}`}
       >
-        {children}
+        {waveAnimation ? renderWaveAnimationText(children) : children}
       </a>
     );
   }
@@ -105,7 +129,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
               : 'bg-white text-darknavy border-2 border-neon/50 hover:brightness-110 shadow-[0_0_15px_rgba(235,255,0,0.3)]'
       } ${className}`}
     >
-      {children}
+      {waveAnimation ? renderWaveAnimationText(children) : children}
     </a>
   );
 };

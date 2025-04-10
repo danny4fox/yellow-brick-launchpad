@@ -4,6 +4,7 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
+
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
@@ -308,7 +309,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
+                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon" waveAnimation={true}>
                   Connect on LinkedIn
                 </ActionButton>
                 <ActionButton href={calendarUrl} boxed={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
