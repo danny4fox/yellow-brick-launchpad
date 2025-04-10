@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { ArrowDown, Linkedin, Youtube, Instagram, Menu, X } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
 
 const Index = () => {
+  const isMobile = useIsMobile();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
 
@@ -54,8 +59,13 @@ const Index = () => {
       element.scrollIntoView({
         behavior: 'smooth'
       });
+      // Close mobile menu after clicking a link
+      if (isMobile) {
+        setMobileMenuOpen(false);
+      }
     }
   };
+
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -65,21 +75,51 @@ const Index = () => {
         </div>
         
         {/* Navigation */}
-        <div className="container mx-auto px-6 py-6 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
           <nav>
-            <div className="flex items-center justify-between px-8 py-4">
+            <div className="flex items-center justify-between px-4 md:px-8 py-4">
               <a href="/" className="text-xl font-bold tracking-tight">
                 <span className="text-neon">*</span> Daniel Bodnar
               </a>
               
-              <div className="flex items-center gap-6">
-                <a href="#work" className="text-white/80 hover:text-white transition-colors" onClick={scrollToSection('work')}>
-                  Services
-                </a>
-                <ActionButton href={calendarUrl} highlighted={true}>
-                  Free Consultation
-                </ActionButton>
-              </div>
+              {isMobile ? (
+                <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                  <DrawerTrigger asChild>
+                    <button className="text-white p-2" aria-label="Menu">
+                      <Menu size={24} />
+                    </button>
+                  </DrawerTrigger>
+                  <DrawerContent className="h-1/2 bg-darknavy text-white px-6 py-8">
+                    <div className="flex justify-between items-center mb-6">
+                      <h3 className="text-lg font-semibold">Menu</h3>
+                      <button onClick={() => setMobileMenuOpen(false)}>
+                        <X size={24} />
+                      </button>
+                    </div>
+                    <div className="flex flex-col gap-6">
+                      <a 
+                        href="#work" 
+                        className="text-white/90 hover:text-white text-xl font-medium transition-colors" 
+                        onClick={scrollToSection('work')}
+                      >
+                        Services
+                      </a>
+                      <ActionButton href={calendarUrl} highlighted={true} className="w-full text-center">
+                        Free Consultation
+                      </ActionButton>
+                    </div>
+                  </DrawerContent>
+                </Drawer>
+              ) : (
+                <div className="flex items-center gap-6">
+                  <a href="#work" className="text-white/80 hover:text-white transition-colors" onClick={scrollToSection('work')}>
+                    Services
+                  </a>
+                  <ActionButton href={calendarUrl} highlighted={true}>
+                    Free Consultation
+                  </ActionButton>
+                </div>
+              )}
             </div>
           </nav>
         </div>
