@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram, Menu, X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
-
 const Index = () => {
   const isMobile = useIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,7 +66,7 @@ const Index = () => {
   };
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
-      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden min-h-[100vh] flex flex-col">
+      <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
@@ -116,8 +115,8 @@ const Index = () => {
         </div>
         
         {/* Hero Content with improved spacing and glow effect */}
-        <div className="container mx-auto px-6 py-32 relative z-10 flex-grow flex items-center">
-          <div className="flex flex-col items-center justify-center text-center px-[36px] w-full">
+        <div className="container mx-auto px-6 py-32 relative z-10">
+          <div className="flex flex-col items-center justify-center text-center px-[36px]">
             <h1 className="text-4xl md:text-7xl font-normal leading-tight tracking-tight mx-0 my-0 px-2">
               {/* Mobile-friendly header with decreasing font sizes */}
               {isMobile ? <>
@@ -337,15 +336,15 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated to fill height on mobile */}
-        <section id="contact" className="py-24 relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden min-h-[100vh] flex flex-col">
-          {/* Background Video */}
+        {/* CTA Section - Updated to remove the container glow and change button styles */}
+        <section id="contact" className="py-24 relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
+          {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
             <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
           </div>
           
-          <div className="container mx-auto px-6 relative z-10 flex-grow flex items-center">
-            <div className="max-w-4xl mx-auto p-10 w-full">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto p-10">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
