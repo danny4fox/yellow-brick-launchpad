@@ -7,10 +7,10 @@ import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
 
 const Index = () => {
   // Replace with your actual LinkedIn URL
-  const linkedInUrl = "https://www.linkedin.com";
+  const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
 
   // Replace with your actual calendar booking URL
-  const calendarUrl = "https://calendly.com";
+  const calendarUrl = "https://calendly.com/hello-danielbodnar/30min";
 
   // YouTube video ID from the URL
   const youtubeVideoId = "CLaTNJ2Nh9k";
@@ -299,8 +299,8 @@ const Index = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
-                  Let's connect on LinkedIn!<br />
-                  Or, if you're ready for a free 30-minute consultation on how motion design can boost your marketing efforts, just hit the Schedule a Meeting button. 😊
+                  Let's connect on <strong>LinkedIn</strong>!<br className="mb-3" />
+                  <span className="block mt-3">Or, if you're ready for a free 30-minute consultation on how motion design can boost your marketing efforts, just hit the Schedule a Meeting button. 😊</span>
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
