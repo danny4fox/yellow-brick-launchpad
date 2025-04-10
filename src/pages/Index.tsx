@@ -4,6 +4,7 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
+
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
@@ -281,7 +282,7 @@ const Index = () => {
         </section>
 
         {/* Worked With Section - Modified for black background and height matching image */}
-        <section className="bg-black text-white relative">
+        <section className="bg-[#18181B] text-white relative">
           <div className="container mx-auto relative z-10 py-0 px-0">
             <div className="max-w-6xl mx-auto bg-black/50 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center justify-center">

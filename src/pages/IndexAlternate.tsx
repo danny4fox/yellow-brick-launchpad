@@ -286,7 +286,7 @@ const IndexAlternate = () => {
         </section>
 
         {/* Worked With Section - Modified for black background and height matching image */}
-        <section className="bg-black text-white relative py-16">
+        <section className="bg-[#18181B] text-white relative py-12">
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-6xl mx-auto bg-white/5 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex flex-wrap items-center justify-center">
