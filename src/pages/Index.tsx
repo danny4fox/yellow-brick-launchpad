@@ -4,7 +4,6 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
-
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
@@ -56,7 +55,6 @@ const Index = () => {
       });
     }
   };
-
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -283,7 +281,7 @@ const Index = () => {
         </section>
 
         {/* Worked With Section - Modified for black background and height matching image */}
-        <section className="bg-[#18181B] text-white relative">
+        <section className="text-white relative bg-[#0a0a0b]">
           <div className="container mx-auto relative z-10 py-0 px-0 bg-[#18181B]">
             <div className="max-w-6xl mx-auto bg-[#18181B] backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center justify-center">
@@ -347,5 +345,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
