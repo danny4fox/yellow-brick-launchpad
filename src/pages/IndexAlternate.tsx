@@ -1,4 +1,3 @@
-
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -7,40 +6,29 @@ import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
 
 const IndexAlternate = () => {
-  // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
-  
-  // Replace with your actual calendar booking URL
   const calendarUrl = "https://calendly.com/hello-danielbodnar/30min";
-  
-  // YouTube video ID from the URL
   const youtubeVideoId = "CLaTNJ2Nh9k";
-  
-  // Background video ID
   const backgroundVideoId = "mI_SHuTntdc";
 
-  // Motion Graphics text with individual character spans
   const motionGraphicsText = "Motion Graphics".split('').map((char, index) => (
     <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
       {char === ' ' ? '\u00A0' : char}
     </span>
   ));
   
-  // Who Am I text with individual character spans - updated to use the same animation as Motion Graphics
   const whoAmIText = "Who Am I?".split('').map((char, index) => (
     <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
       {char === ' ' ? '\u00A0' : char}
     </span>
   ));
   
-  // What Am I Doing text with individual character spans - updated to use the same animation as Motion Graphics
   const whatAmIDoingText = "What Am I Doing?".split('').map((char, index) => (
     <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
       {char === ' ' ? '\u00A0' : char}
     </span>
   ));
   
-  // Worked With text with individual character spans
   const workedWithText = "Worked With".split('').map((char, index) => (
     <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
       {char === ' ' ? '\u00A0' : char}
@@ -49,14 +37,11 @@ const IndexAlternate = () => {
 
   return (
     <div className="min-h-screen bg-white text-darknavy font-sans">
-      {/* Hero Section */}
       <header className="relative bg-darknavy text-white overflow-hidden">
-        {/* Background Video */}
         <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
         </div>
         
-        {/* Navigation */}
         <div className="container mx-auto px-6 py-6 relative z-10">
           <nav>
             <div className="flex items-center justify-between px-8 py-4">
@@ -76,7 +61,6 @@ const IndexAlternate = () => {
           </nav>
         </div>
         
-        {/* Hero Content with improved spacing and glow effects */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-5xl md:text-7xl font-normal leading-tight tracking-tight">
@@ -102,7 +86,6 @@ const IndexAlternate = () => {
       </header>
 
       <main>
-        {/* Who Am I Section - Enhanced with glow effects and contrast */}
         <section id="about" className="py-24 bg-gradient-to-br from-white to-gray-50">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -154,7 +137,6 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* Video Showcase Section with enhanced contrast */}
         <section className="py-24 bg-gradient-to-tr from-gray-100 to-white relative overflow-hidden group wink-on-hover-parent">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-white/20 blur-3xl rounded-full opacity-30"></div>
           <div className="container mx-auto px-6 relative z-10">
@@ -164,9 +146,7 @@ const IndexAlternate = () => {
                 <span className="relative z-10 text-white px-6 py-2">My Work</span>
               </h2>
               <p className="text-sm md:text-lg max-w-3xl mx-auto text-darknavy/80 mt-6 font-medium flex items-center justify-center transition-all duration-300">
-                {/* Circle with arrow */}
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 mr-2">
-                  {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
                     <ArrowDown 
                       size={28} 
@@ -185,9 +165,7 @@ const IndexAlternate = () => {
                   </span>
                 </span>
                 
-                {/* Circle with arrow */}
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 ml-2">
-                  {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
                     <ArrowDown 
                       size={28} 
@@ -204,7 +182,6 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* What Am I Doing Section - Added emojis to service box titles with spacing and animation */}
         <section id="services" className="py-24 bg-gradient-to-br from-gray-50 to-white text-darknavy relative">
           <div className="container mx-auto px-6 relative z-20">
             <div className="text-center mb-16">
@@ -286,7 +263,6 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* Worked With Section - Modified for black background and height matching image */}
         <section className="bg-[#18181B] text-white relative py-6">
           <div className="container mx-auto px-6 relative z-10 bg-[#18181B]">
             <div className="max-w-6xl mx-auto bg-[#18181B] backdrop-blur-sm p-8 rounded-xl">
@@ -301,9 +277,7 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated to remove container glow and change button styles */}
         <section id="contact" className="py-24 relative bg-darknavy text-white overflow-hidden">
-          {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
             <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
           </div>
@@ -318,10 +292,10 @@ const IndexAlternate = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
+                <ActionButton href={linkedInUrl} inverse={true} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} boxed={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                <ActionButton href={calendarUrl} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                   Schedule a Meeting
                 </ActionButton>
               </div>
@@ -330,16 +304,13 @@ const IndexAlternate = () => {
         </section>
       </main>
 
-      {/* Updated Footer with two distinct sections */}
       <footer className="bg-darknavy text-center text-white/60">
-        {/* Section 1 - Copyright */}
         <div className="py-6">
           <div className="container mx-auto px-6">
             <p>© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
           </div>
         </div>
         
-        {/* Section 2 - Company Info with slightly different background */}
         <div className="py-4 bg-darknavy/80">
           <div className="container mx-auto px-6">
             <div className="text-xs text-white/40 flex justify-center">

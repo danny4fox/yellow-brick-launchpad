@@ -308,10 +308,10 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
+                <ActionButton href={linkedInUrl} inverse={true} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} boxed={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                <ActionButton href={calendarUrl} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                   Schedule a Meeting
                 </ActionButton>
               </div>
