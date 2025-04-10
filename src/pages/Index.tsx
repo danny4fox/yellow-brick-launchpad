@@ -4,7 +4,6 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
-
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
@@ -14,38 +13,38 @@ const Index = () => {
 
   // YouTube video ID from the URL
   const youtubeVideoId = "CLaTNJ2Nh9k";
-  
+
   // Background video ID
   const backgroundVideoId = "mI_SHuTntdc";
-  
+
   // Motion Graphics text with individual character spans
-  const motionGraphicsText = "Motion Graphics".split('').map((char, index) => (
-    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+  const motionGraphicsText = "Motion Graphics".split('').map((char, index) => <span key={index} className="char" style={{
+    animationDelay: `${index * 0.05}s`
+  }}>
       {char === ' ' ? '\u00A0' : char}
-    </span>
-  ));
-  
+    </span>);
+
   // Who Am I text with individual character spans - updated to use the same animation as Motion Graphics
-  const whoAmIText = "Who Am I?".split('').map((char, index) => (
-    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+  const whoAmIText = "Who Am I?".split('').map((char, index) => <span key={index} className="char" style={{
+    animationDelay: `${index * 0.05}s`
+  }}>
       {char === ' ' ? '\u00A0' : char}
-    </span>
-  ));
-  
+    </span>);
+
   // What Am I Doing text with individual character spans - updated to use the same animation as Motion Graphics
-  const whatAmIDoingText = "What Am I Doing?".split('').map((char, index) => (
-    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+  const whatAmIDoingText = "What Am I Doing?".split('').map((char, index) => <span key={index} className="char" style={{
+    animationDelay: `${index * 0.05}s`
+  }}>
       {char === ' ' ? '\u00A0' : char}
-    </span>
-  ));
-  
+    </span>);
+
   // Worked With text with individual character spans
-  const workedWithText = "Worked With".split('').map((char, index) => (
-    <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+  const workedWithText = "Worked With".split('').map((char, index) => <span key={index} className="char" style={{
+    animationDelay: `${index * 0.05}s`
+  }}>
       {char === ' ' ? '\u00A0' : char}
-    </span>
-  ));
-  
+    </span>);
+
   // Smooth scroll handler for anchor links
   const scrollToSection = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault();
@@ -56,7 +55,6 @@ const Index = () => {
       });
     }
   };
-  
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -74,11 +72,7 @@ const Index = () => {
               </a>
               
               <div className="flex items-center gap-6">
-                <a 
-                  href="#work" 
-                  className="text-white/80 hover:text-white transition-colors"
-                  onClick={scrollToSection('work')}
-                >
+                <a href="#work" className="text-white/80 hover:text-white transition-colors" onClick={scrollToSection('work')}>
                   Services
                 </a>
                 <ActionButton href={calendarUrl} highlighted={true}>
@@ -176,11 +170,7 @@ const Index = () => {
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 mr-2">
                   {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
-                    <ArrowDown 
-                      size={28} 
-                      strokeWidth={3}
-                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
-                    />
+                    <ArrowDown size={28} strokeWidth={3} className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" />
                   </span>
                 </span>
                 
@@ -197,11 +187,7 @@ const Index = () => {
                 <span className="relative group-hover:opacity-0 transition-opacity duration-300 ml-2">                  
                   {/* Black circle with arrow */}
                   <span className="bg-black rounded-full w-10 h-10 inline-flex items-center justify-center relative">
-                    <ArrowDown 
-                      size={28} 
-                      strokeWidth={3}
-                      className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" 
-                    />
+                    <ArrowDown size={28} strokeWidth={3} className="animate-continuous-down font-bold transition-opacity duration-300 group-hover:opacity-0 text-white" />
                   </span>
                 </span>
               </p>
@@ -296,14 +282,10 @@ const Index = () => {
 
         {/* Worked With Section - Modified for black background and height matching image */}
         <section className="bg-black text-white relative">
-          <div className="container mx-auto px-6 py-10 relative z-10">
+          <div className="container mx-auto relative z-10 py-0 px-0">
             <div className="max-w-6xl mx-auto bg-black/50 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" 
-                  alt="Companies I've worked with including Google, Gulf, Digital Guest, Turf Tank, RaskRask, and Sign.com" 
-                  className="w-full max-w-5xl mx-auto"
-                />
+                <img src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" alt="Companies I've worked with including Google, Gulf, Digital Guest, Turf Tank, RaskRask, and Sign.com" className="w-full max-w-5xl mx-auto" />
               </div>
             </div>
           </div>
@@ -363,5 +345,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
