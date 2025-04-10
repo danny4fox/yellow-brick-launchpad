@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -128,21 +129,39 @@ const IndexAlternate = () => {
         {/* Hero Content with improved spacing and glow effects */}
         <div className="container mx-auto px-6 py-32 relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-5xl md:text-7xl font-normal leading-tight tracking-tight">
-              <div className="block mb-2">Bringing <strong className="relative">
-                <span className="relative z-10">SaaS</span>
-              </strong>, <strong className="relative">
-                <span className="relative z-10">IoT</span>
-              </strong> Brands to Life</div>
-              <div className="block">with <span className="gradient-text-hover font-bold italic relative">
-                <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
-                <span className="text-container inline-flex">
-                  {motionGraphicsText}
-                </span>
-              </span></div>
+            <h1 className="text-4xl md:text-7xl font-normal leading-tight tracking-tight px-2">
+              {/* Mobile-friendly header with decreasing font sizes */}
+              {isMobile ? (
+                <>
+                  <div className="block mb-1 text-4xl">Bringing <strong className="relative"><span className="relative z-10">SaaS</span></strong>, <strong className="relative"><span className="relative z-10">IoT</span></strong> Brands</div>
+                  <div className="block mb-1 text-3xl">to Life with</div>
+                  <div className="block text-2xl">
+                    <span className="gradient-text-hover font-bold italic relative">
+                      <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
+                      <span className="text-container inline-flex">
+                        {motionGraphicsText}
+                      </span>
+                    </span>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="block mb-2">Bringing <strong className="relative">
+                    <span className="relative z-10">SaaS</span>
+                  </strong>, <strong className="relative">
+                    <span className="relative z-10">IoT</span>
+                  </strong> Brands to Life</div>
+                  <div className="block">with <span className="gradient-text-hover font-bold italic relative">
+                    <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
+                    <span className="text-container inline-flex">
+                      {motionGraphicsText}
+                    </span>
+                  </span></div>
+                </>
+              )}
             </h1>
             
-            <div className="mt-12 text-3xl md:text-4xl font-bold relative">
+            <div className="mt-12 text-xl md:text-4xl font-bold relative">
               <span className="absolute -inset-2 bg-white/5 blur-lg rounded-full z-0"></span>
               <span className="relative z-10">Guidance that flows, brand that sticks</span>
             </div>
