@@ -389,8 +389,8 @@ const Index = () => {
                     href="mailto:hello@danielbodnar.io" 
                     className="relative group inline-block transition-all duration-300"
                   >
-                    <span className="absolute -inset-1 -skew-y-3 bg-neon/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-md z-0"></span>
-                    <span className="relative z-10 text-neon font-medium hover:text-white transition-colors duration-300">
+                    <span className="absolute -inset-1 -skew-y-3 bg-white/5 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-md z-0"></span>
+                    <span className="relative z-10 text-white font-medium hover:text-white/80 transition-colors duration-300 shadow-sm hover:shadow-white/30">
                       hello@danielbodnar.io
                     </span>
                   </a>
