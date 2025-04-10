@@ -4,7 +4,6 @@ import ActionButton from '../components/ActionButton';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Linkedin, Youtube, Instagram } from 'lucide-react';
-
 const Index = () => {
   // Replace with your actual LinkedIn URL
   const linkedInUrl = "https://www.linkedin.com/in/daniel-bodnar/";
@@ -56,7 +55,6 @@ const Index = () => {
       });
     }
   };
-
   return <div className="min-h-screen bg-gradient-to-b from-darknavy to-black text-white font-sans">
       {/* Hero Section with frosted glass navbar */}
       <header className="relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
@@ -283,9 +281,9 @@ const Index = () => {
         </section>
 
         {/* Worked With Section - Modified for black background and height matching image */}
-        <section className="text-white relative bg-[#18181B]">
-          <div className="container mx-auto relative z-10 py-0 px-0 bg-[#18181B]">
-            <div className="max-w-6xl mx-auto backdrop-blur-sm p-8 rounded-xl bg-[#18181B] py-[3px] px-[54px]">
+        <section className="text-white relative bg-[#0a0a0b]">
+          <div className="container mx-auto relative z-10 py-0 px-0 bg-[#0a0a0b]">
+            <div className="max-w-6xl mx-auto backdrop-blur-sm p-8 rounded-xl bg-[#0a0a0b] py-[3px] px-[54px]">
               <div className="flex items-center justify-center">
                 <img src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" alt="Companies I've worked with including Google, Gulf, Digital Guest, Turf Tank, RaskRask, and Sign.com" className="w-full max-w-5xl mx-auto" />
               </div>
@@ -293,7 +291,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Restoring LinkedIn button style while keeping animation */}
+        {/* CTA Section - Updated to remove the container glow and change button styles */}
         <section id="contact" className="py-24 relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
           {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
@@ -310,10 +308,10 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <ActionButton href={linkedInUrl} inverse={true} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
+                <ActionButton href={linkedInUrl} inverse={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:text-neon">
                   Connect on LinkedIn
                 </ActionButton>
-                <ActionButton href={calendarUrl} highlighted={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                <ActionButton href={calendarUrl} boxed={true} className="shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                   Schedule a Meeting
                 </ActionButton>
               </div>

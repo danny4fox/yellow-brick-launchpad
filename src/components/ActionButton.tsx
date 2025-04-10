@@ -58,7 +58,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         rel="noopener noreferrer"
         className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
       >
-        {renderAnimatedText(children)}
+        {children}
       </a>
     );
   }
@@ -83,10 +83,9 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy relative overflow-hidden ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy ${className}`}
       >
-        <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0 opacity-0 hover:opacity-50 transition-opacity"></span>
-        <span className="relative z-10">{renderAnimatedText(children)}</span>
+        {children}
       </a>
     );
   }
@@ -102,12 +101,11 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         textOnly
           ? ''
           : inverse 
-              ? 'bg-transparent border-2 border-neon text-white hover:bg-neon/10 hover:text-neon relative overflow-hidden' 
-              : 'bg-white text-darknavy border-2 border-neon/50 hover:brightness-110 shadow-[0_0_15px_rgba(235,255,0,0.3)] relative overflow-hidden'
+              ? 'bg-transparent border-2 border-neon text-white hover:bg-neon/10 hover:text-neon' 
+              : 'bg-white text-darknavy border-2 border-neon/50 hover:brightness-110 shadow-[0_0_15px_rgba(235,255,0,0.3)]'
       } ${className}`}
     >
-      <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0 opacity-0 hover:opacity-50 transition-opacity"></span>
-      <span className="relative z-10">{renderAnimatedText(children)}</span>
+      {children}
     </a>
   );
 };
