@@ -135,7 +135,7 @@ const IndexAlternate = () => {
                 <>
                   <div className="block mb-1 text-4xl">Bringing <strong className="relative"><span className="relative z-10">SaaS</span></strong>, <strong className="relative"><span className="relative z-10">IoT</span></strong> Brands</div>
                   <div className="block mb-1 text-3xl">to Life with</div>
-                  <div className="block text-2xl">
+                  <div className="block text-4xl">
                     <span className="gradient-text-hover font-bold italic relative">
                       <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
                       <span className="text-container inline-flex">
@@ -151,7 +151,7 @@ const IndexAlternate = () => {
                   </strong>, <strong className="relative">
                     <span className="relative z-10">IoT</span>
                   </strong> Brands to Life</div>
-                  <div className="block">with <span className="gradient-text-hover font-bold italic relative">
+                  <div className="block">with <span className="gradient-text-hover font-bold italic relative text-4xl md:text-7xl">
                     <span className="absolute -inset-2 animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite] blur-md rounded-full z-0 glow"></span>
                     <span className="text-container inline-flex">
                       {motionGraphicsText}
