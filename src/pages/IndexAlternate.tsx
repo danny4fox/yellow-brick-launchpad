@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -70,7 +69,7 @@ const IndexAlternate = () => {
   return (
     <div className="min-h-screen bg-white text-darknavy font-sans">
       {/* Hero Section */}
-      <header className="relative bg-darknavy text-white overflow-hidden">
+      <header className="relative bg-darknavy text-white overflow-hidden min-h-[100vh] flex flex-col">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full opacity-20 z-0">
           <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
@@ -127,8 +126,8 @@ const IndexAlternate = () => {
         </div>
         
         {/* Hero Content with improved spacing and glow effects */}
-        <div className="container mx-auto px-6 py-32 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center">
+        <div className="container mx-auto px-6 py-32 relative z-10 flex-grow flex items-center">
+          <div className="flex flex-col items-center justify-center text-center w-full">
             <h1 className="text-4xl md:text-7xl font-normal leading-tight tracking-tight px-2">
               {/* Mobile-friendly header with decreasing font sizes */}
               {isMobile ? (
@@ -369,15 +368,15 @@ const IndexAlternate = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated to remove container glow and change button styles */}
-        <section id="contact" className="py-24 relative bg-darknavy text-white overflow-hidden">
+        {/* CTA Section - Updated to fill height on mobile */}
+        <section id="contact" className="py-24 relative bg-darknavy text-white overflow-hidden min-h-[100vh] flex flex-col">
           {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
             <VideoEmbed youtubeId={backgroundVideoId} isBackground={true} />
           </div>
           
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto p-10">
+          <div className="container mx-auto px-6 relative z-10 flex-grow flex items-center">
+            <div className="max-w-4xl mx-auto p-10 w-full">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
