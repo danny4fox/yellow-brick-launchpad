@@ -134,7 +134,7 @@ const IndexAlternate = () => {
                     Today, I help innovative companies—especially in SaaS, IoT, and Robotics—bring clarity to complex concepts.
                   </p>
                   <p>
-                    I'm all about delivering the highest amount of meaning in the least amount of time����no fluff, just crystal-clear communication. 
+                    I'm all about delivering the highest amount of meaning in the least amount of time������no fluff, just crystal-clear communication. 
                     And what better way to do that than with motion design?
                   </p>
                   <p className="italic font-medium text-lg border-b-2 border-neon/50 pb-2 inline-block">
@@ -290,7 +290,7 @@ const IndexAlternate = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
-                  Let's just connect on LinkedIn or if you are ready to have a 30 minutes free consultation about motion design can help marketing efforts, just hit the Schedule a Meeting button. :)
+                  Let's connect on LinkedIn! Or, if you're ready for a free 30-minute consultation on how motion design can boost your marketing efforts, just hit the Schedule a Meeting button. 😊
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -306,33 +306,19 @@ const IndexAlternate = () => {
         </section>
       </main>
 
-      {/* Updated Footer with copyright and social icons in middle column, company info in separate block */}
-      <footer className="bg-darknavy text-center py-8 text-white/60">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0">
-            {/* Empty first column */}
-            <div className="hidden md:block md:w-1/3"></div>
-            
-            {/* Copyright and social icons - middle column */}
-            <div className="md:w-1/3 text-center">
-              <p>© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
-              
-              {/* Social Media Icons - Centered */}
-              <div className="flex space-x-4 mt-4 justify-center">
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-                  <Linkedin size={20} />
-                </a>
-                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-                  <Youtube size={20} />
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-                  <Instagram size={20} />
-                </a>
-              </div>
-            </div>
-            
-            {/* Company Info - right column without border */}
-            <div className="md:w-1/3 text-xs text-white/40 text-left">
+      {/* Updated Footer with two distinct sections */}
+      <footer className="bg-darknavy text-center text-white/60">
+        {/* Section 1 - Copyright */}
+        <div className="py-6">
+          <div className="container mx-auto px-6">
+            <p>© {new Date().getFullYear()} Daniel Bodnar. All rights reserved.</p>
+          </div>
+        </div>
+        
+        {/* Section 2 - Company Info with slightly different background */}
+        <div className="py-4 bg-darknavy/80">
+          <div className="container mx-auto px-6">
+            <div className="text-xs text-white/40 flex justify-center">
               <div className="flex flex-col space-y-1">
                 <p>DB MOTION</p>
                 <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>
