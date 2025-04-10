@@ -283,7 +283,7 @@ const Index = () => {
         {/* Worked With Section - Modified for black background and height matching image */}
         <section className="text-white relative bg-[#0a0a0b]">
           <div className="container mx-auto relative z-10 py-0 px-0 bg-[#0a0a0b]">
-            <div className="max-w-6xl mx-auto backdrop-blur-sm p-8 rounded-xl bg-[#0a0a0b]">
+            <div className="max-w-6xl mx-auto backdrop-blur-sm p-8 rounded-xl bg-[#0a0a0b] py-[3px] px-[54px]">
               <div className="flex items-center justify-center">
                 <img src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" alt="Companies I've worked with including Google, Gulf, Digital Guest, Turf Tank, RaskRask, and Sign.com" className="w-full max-w-5xl mx-auto" />
               </div>
