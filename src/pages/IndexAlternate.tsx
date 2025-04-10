@@ -1,3 +1,4 @@
+
 import React from 'react';
 import VideoEmbed from '../components/VideoEmbed';
 import ActionButton from '../components/ActionButton';
@@ -286,9 +287,9 @@ const IndexAlternate = () => {
         </section>
 
         {/* Worked With Section - Modified for black background and height matching image */}
-        <section className="bg-[#18181B] text-white relative py-12">
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-6xl mx-auto bg-white/5 backdrop-blur-sm p-8 rounded-xl">
+        <section className="bg-[#18181B] text-white relative py-6">
+          <div className="container mx-auto px-6 relative z-10 bg-[#18181B]">
+            <div className="max-w-6xl mx-auto bg-[#18181B] backdrop-blur-sm p-8 rounded-xl">
               <div className="flex flex-wrap items-center justify-center">
                 <img 
                   src="/lovable-uploads/25ac543f-d6fa-4234-bba3-297c456aa4fd.png" 
