@@ -299,7 +299,8 @@ const Index = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
                 <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
-                  Let's connect on LinkedIn! Or, if you're ready for a free 30-minute consultation on how motion design can boost your marketing efforts, just hit the Schedule a Meeting button. 😊
+                  Let's connect on LinkedIn!<br />
+                  Or, if you're ready for a free 30-minute consultation on how motion design can boost your marketing efforts, just hit the Schedule a Meeting button. 😊
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
