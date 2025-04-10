@@ -287,7 +287,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section - Updated to match header section background with styling changes */}
+        {/* CTA Section - Updated to remove the container glow and change button styles */}
         <section id="contact" className="py-24 relative bg-gradient-to-r from-black to-darknavy/90 overflow-hidden">
           {/* Background Video - same as header */}
           <div className="absolute inset-0 w-full h-full opacity-20 z-0">
@@ -295,11 +295,11 @@ const Index = () => {
           </div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto backdrop-blur-lg rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.15)] p-10">
+            <div className="max-w-4xl mx-auto p-10">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Not ready to have a chat?</h2>
-                <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
-                  Let's just connect on LinkedIn or if you are ready to have a 30 minutes free consultation about your marketing efforts, just hit the Schedule a Meeting button. :)
+                <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
+                  Let's just connect on LinkedIn or if you are ready to have a 30 minutes free consultation about motion design can help marketing efforts, just hit the Schedule a Meeting button. :)
                 </p>
               </div>
               <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -315,7 +315,7 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Updated Footer with centered copyright and social icons in middle column, company info in right column with border */}
+      {/* Updated Footer with centered copyright, social icons, and company info in separate block */}
       <footer className="bg-black text-center py-8 text-white/60">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0">
@@ -340,8 +340,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Company Info - right column with border */}
-            <div className="md:w-1/3 text-xs text-white/40 text-left footer-company-border">
+            {/* Company Info - right column without border */}
+            <div className="md:w-1/3 text-xs text-white/40 text-left">
               <div className="flex flex-col space-y-1">
                 <p>DB MOTION</p>
                 <p>Danmarksgade 14B 1.6. 9000 Aalborg</p>

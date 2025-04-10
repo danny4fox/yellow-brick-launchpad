@@ -56,7 +56,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] ${className}`}
       >
         {children}
       </a>
@@ -69,7 +69,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] relative overflow-hidden ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-white/90 shadow-[0_0_15px_rgba(235,255,0,0.3)] relative overflow-hidden ${className}`}
       >
         <span className="absolute -inset-1 bg-neon/10 blur-sm rounded-lg z-0 opacity-0 hover:opacity-50 transition-opacity"></span>
         <span className="relative z-10">{renderAnimatedText(children)}</span>
@@ -83,7 +83,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-xl shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy ${className}`}
+        className={`inline-block font-bold text-darknavy bg-white py-3 px-5 rounded-full shadow-inner border-l-4 border-neon/50 transition-all duration-300 hover:bg-neon hover:text-darknavy ${className}`}
       >
         {children}
       </a>
